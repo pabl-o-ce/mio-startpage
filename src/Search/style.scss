@@ -1,0 +1,26 @@
+.app-search {
+    padding-top: 40px;
+    position: relative;
+    border-color: #312f2f !important;
+    a {
+        background-color: #0B0E12;
+        color: #0076FF;
+        font-family: 'Exo';
+        font-weight: bold;
+    }
+    .form-control {
+        color: #29fd2e !important;
+        font-weight: bold;
+        text-indent: 25px;
+    }
+}
+.search {
+    &-icon {
+        font-family: 'MesloLGS NF';
+        font-weight: bold;
+        font-size: 28px;
+        position: absolute;
+        top: 22%;
+        left: 12px;
+    }
+}
