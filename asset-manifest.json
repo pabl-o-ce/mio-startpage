@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mio-startpage/static/css/main.9321583c.chunk.css",
-    "main.js": "/mio-startpage/static/js/main.87d8b16b.chunk.js",
-    "main.js.map": "/mio-startpage/static/js/main.87d8b16b.chunk.js.map",
+    "main.js": "/mio-startpage/static/js/main.45a19f1b.chunk.js",
+    "main.js.map": "/mio-startpage/static/js/main.45a19f1b.chunk.js.map",
     "runtime-main.js": "/mio-startpage/static/js/runtime-main.e74d7ad5.js",
     "runtime-main.js.map": "/mio-startpage/static/js/runtime-main.e74d7ad5.js.map",
     "static/js/2.5ef65478.chunk.js": "/mio-startpage/static/js/2.5ef65478.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.e74d7ad5.js",
     "static/js/2.5ef65478.chunk.js",
     "static/css/main.9321583c.chunk.css",
-    "static/js/main.87d8b16b.chunk.js"
+    "static/js/main.45a19f1b.chunk.js"
   ]
 }
