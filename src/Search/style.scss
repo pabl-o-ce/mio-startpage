@@ -3,10 +3,14 @@
     position: relative;
     border-color: #312f2f !important;
     a {
-        background-color: #0B0E12;
+        background-color: rgba(3, 3, 4, 0.5);
         color: #0076FF;
         font-family: 'Exo';
         font-weight: bold;
+    }
+    .btn-outline:hover, [open]>.btn-outline {
+        color: #29fd2e !important;
+        background-color: rgba(3, 4, 3, 0.705) !important;
     }
     .form-control {
         color: #29fd2e !important;
@@ -20,10 +24,12 @@
         font-weight: bold;
         font-size: 28px;
         position: absolute;
-        top: 22%;
+        top: 20%;
         left: 12px;
     }
-    .input-dark {
-        background-color: hsla(0, 0%, 100%, 0.01) !important;
-    }
+}
+
+.input-dark {
+    background-color: hsla(0, 0%, 0%, 0.377) !important;
+    height: 40px;
 }

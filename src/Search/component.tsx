@@ -20,8 +20,9 @@ const Search: React.FC = () => {
         <span className="search-icon"></span>
         <input className="form-control input-block input-dark" value={search} onChange={handleChange} onKeyDown={handleKeyDown} type="text" placeholder="" aria-label="Full-width input" />
         <div className="d-flex flex-justify-center mt-6">
-        <a href={'https://www.google.com/search?safe=strict&q=' + search} className="btn btn-outline mr-2 box-shadow-none" type="button">Google Search</a>
-        <a href={'https://duckduckgo.com/?q=' + search} className="btn btn-outline box-shadow-none" type="button">DuckDuckGo Search</a>
+        <a href={'https://www.google.com/search?safe=strict&q=' + search} className="btn btn-outline mr-2 box-shadow-none pt-3 pb-3 pl-5 pr-5" type="button">Google Search</a>
+        <a href={'https://duckduckgo.com/?q=' + search} className="btn btn-outline mr-2 box-shadow-none pt-3 pb-3 pl-5 pr-5" type="button">DuckDuckGo Search</a>
+        <a href={'https://www.amazon.com/s?k=' + search} className="btn btn-outline box-shadow-none pt-3 pb-3 pl-5 pr-5" type="button">Amazon Search</a>
         </div>
     </section>
   )};
