@@ -17,7 +17,7 @@ const Search: React.FC = () => {
   };
   return (
     <section className="app-search pb-6 border-bottom">
-        <span className="search-icon"></span>
+        <img className="search-icon" src={process.env.PUBLIC_URL + '/assets/img/shuttle.svg'} width="28"/>
         <input className="form-control input-block input-dark" value={search} onChange={handleChange} onKeyDown={handleKeyDown} type="text" placeholder="" aria-label="Full-width input" />
         <div className="d-flex flex-justify-center mt-6">
         <a href={'https://www.google.com/search?safe=strict&q=' + search} className="btn btn-outline mr-2 box-shadow-none pt-3 pb-3 pl-5 pr-5" type="button">Google Search</a>
