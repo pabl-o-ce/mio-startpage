@@ -7,6 +7,8 @@ const Bookmark: React.FC = () => (
     <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://outlook.office.com/mail/inbox">Email</a>
     <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://reddit.com">Reddit</a>
     <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://youtube.com">YouTube</a>
+    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://open.spotify.com/">Spotify</a>
+    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://tunein.com/radio/home/">TuneIn</a>
     <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://news.ycombinator.com/">HackerNews</a>
     <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://www.github.com/">GitHub</a>
     <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://my.vultr.com/">Vultr</a>
@@ -14,12 +16,13 @@ const Bookmark: React.FC = () => (
     <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://dash.cloudflare.com/">CloudFlare</a>
     <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://ap.www.namecheap.com/dashboard">NameCheap</a>
     <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://wiki.archlinux.org/">ArchWiki</a>
-    {/* <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="http://libgen.rs/">LibraryGenesis</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://torrentgalaxy.pw">TorrentGalaxy</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://onehack.us/">OneHack</a> */}
     <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://amazon.com/">Amazon</a>
     <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://newegg.com/">NewEgg</a>
     <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://ebay.com/">EBay</a>
+    {/* <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://libgen.fun/">LibraryGenesis</a>
+    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://1337x.to">1337X</a>
+    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://torrentgalaxy.pw">TorrentGalaxy</a>
+    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://onehack.us/">OneHack</a> */}
   </section>
 );
 
