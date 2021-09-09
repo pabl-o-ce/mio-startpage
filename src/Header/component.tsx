@@ -25,11 +25,11 @@ const Header: React.FC = () => {
   <section className="app-header">
       <div className="header-main d-flex pb-6 border-bottom">
         <div className="header-label">
-          <h1 className="text-left mb-1">Benvenuto, sir</h1>
+          <p className="ht h1 text-left mb-1">Benvenuto, sir</p>
         </div>
         <div className="header-time text-right">
-          <h1 className="mb-1">{time}</h1>
-          <small><strong>{date}</strong></small>
+          <p className="ht h1 mb-1">{time}</p>
+          <p className="h2 mt-3">{date}</p>
         </div>
       </div>
   </section>

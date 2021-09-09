@@ -2,10 +2,11 @@
     padding-top: 40px;
     position: relative;
     border-color: #312f2f !important;
-    .form-control {
+    .form-control[type="text"] {
         color: #29fd2e !important;
         font-weight: bold;
-        text-indent: 28px;
+        text-indent: 60px;
+        font-size: 40px;
     }
 }
 .search {
@@ -13,12 +14,12 @@
         font-family: 'MesloLGS NF';
         font-weight: bold;
         position: absolute;
-        top: 22%;
-        left: 12px;
+        top: 19%;
+        left: 20px;
     }
 }
 
 .input-dark {
     background-color: hsla(0, 0%, 0%, 0.377) !important;
-    height: 40px;
+    height: 70px;
 }

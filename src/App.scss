@@ -3,26 +3,26 @@
 @import '@primer/css/buttons/index.scss';
 
 .App {
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 @media only screen and (max-width: 768px) {
     .App {
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 3%;
+        padding-right: 3%;
     }
 }
 @media only screen and (max-width: 425px) {
     .App {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 3%;
+        padding-right: 3%;
     }
 }
 @media only screen and (max-width: 375px) {
     .App {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 3%;
+        padding-right: 3%;
     }
 }
 @media only screen and (max-width: 374px) {
