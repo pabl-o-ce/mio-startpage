@@ -8,7 +8,7 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0B0B0B;
+  background-color: #000;
   color: #29FD2E;
   position: relative;
   width: 100%;
@@ -21,12 +21,13 @@ input {
 }
 
 .btn {
-  background-color: rgba(3, 3, 4, 0.5) !important;
+  background-color: hsla(0, 0%, 2%, 0.38) !important;
   color: #0076FF !important;
   font-family: 'Exo' !important;
   font-size: 20px !important;
   font-weight: bold !important;
   text-decoration: none;
+  border: none !important;
 }
 
 .pl-7 {
