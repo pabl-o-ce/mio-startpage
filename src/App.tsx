@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
 import { Header } from './Header';
 import { Search } from './Search';
@@ -7,7 +6,7 @@ import { Bookmark } from './Bookmark';
 
 function App() {
   return (
-    <div className="App overflow-hidden">
+    <div className="App overflow-x-hidden">
       <Header/>
       <Search/>
       <Bookmark/>
