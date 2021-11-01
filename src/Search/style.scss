@@ -9,18 +9,19 @@
         font-size: 40px;
     }
 }
+
 .search {
     &-icon {
         font-family: 'MesloLGS NF';
         font-weight: bold;
         position: absolute;
-        top: 19%;
+        top: 54px;
         left: 20px;
     }
 }
 
 .input-dark {
-    background-color: hsla(212, 100%, 3%, 0.38) !important; // hsla(0, 0%, 0%, 0.377) !important;
+    background-color: hsla(212, 100%, 3%, 0.38) !important;
     height: 70px;
     caret-color: transparent;
 }

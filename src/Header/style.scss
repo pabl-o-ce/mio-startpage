@@ -15,5 +15,35 @@
 }
 
 .ht {
-    font-size: 2.8rem !important;
+    font-size: 1.8rem !important;
+    &-2 {
+        font-size: 18px !important;
+    }
+}
+
+@media (min-width: 544px) {
+    .ht {
+        font-size: 2rem !important;
+        &-2 {
+            font-size: 24px !important;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .ht {
+        font-size: 2.4rem !important;
+    }
+}
+
+@media (min-width: 1012px) {
+    .ht {
+        font-size: 2.6rem !important;
+    }
+}
+
+@media (min-width: 1280px) {
+    .ht {
+        font-size: 2.8rem !important;
+    }
 }

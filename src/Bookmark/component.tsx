@@ -3,26 +3,65 @@ import React from 'react';
 import './style.scss';
 
 const Bookmark: React.FC = () => (
-  <section className="app-bookmark d-flex flex-justify-center flex-wrap pb-6">
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://outlook.office.com/mail/inbox">Email</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://reddit.com">Reddit</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://youtube.com">YouTube</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://open.spotify.com/">Spotify</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://tunein.com/radio/home/">TuneIn</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://news.ycombinator.com/">HackerNews</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://www.github.com/">GitHub</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://my.vultr.com/">Vultr</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://poscye.signin.aws.amazon.com/console">AWS</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://dash.cloudflare.com/">CloudFlare</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://ap.www.namecheap.com/dashboard">NameCheap</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://wiki.archlinux.org/">ArchWiki</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://amazon.com/">Amazon</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://newegg.com/">NewEgg</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://ebay.com/">EBay</a>
-    {/* <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://libgen.fun/">LibraryGenesis</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://1337x.to">1337X</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://torrentgalaxy.pw">TorrentGalaxy</a>
-    <a className="btn btn-outline mt-3 mr-4 box-shadow-none pt-3 pb-3 pl-5 pr-5" href="https://onehack.us/">OneHack</a> */}
+  <section className="app-bookmark d-flex flex-justify-center flex-wrap">
+    <div>
+
+    </div>
+    <a className="bmk btn box-shadow-none" href="https://outlook.office.com/mail/inbox">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/email.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://reddit.com">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/reddit.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://youtube.com">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/youtube.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://open.spotify.com/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/spotify.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://tunein.com/radio/home/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/tunein.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://news.ycombinator.com/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/hackernews.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://www.github.com/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/github.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://my.vultr.com/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/vultr.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://poscye.signin.aws.amazon.com/console">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/aws.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://dash.cloudflare.com/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/cloudflare.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://ap.www.namecheap.com/dashboard">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/namecheap.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://wiki.archlinux.org/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/archlinux.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://amazon.com/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/amazon.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://newegg.com/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/newegg.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://ebay.com/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/ebay.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://libgen.fun/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/libgen.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://1337x.to">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/1337x.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://torrentgalaxy.pw">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/tg.svg`} width="25"/>
+    </a>
+    {/* <a className="bmk btn box-shadow-none" href="https://onehack.us/">OneHack</a> */}
   </section>
 );
 

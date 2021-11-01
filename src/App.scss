@@ -5,7 +5,22 @@
 .App {
     padding-left: 3%;
     padding-right: 3%;
+    overflow-x: hidden;
 }
+
+.btn {
+    background-color: hsla(0, 0%, 2%, 0.38) !important;
+    color: #0076FF !important;
+    font-family: 'Exo' !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    text-decoration: none;
+    border: none !important;
+    &:hover, [open]>& {
+      color: #29fd2e !important;
+      background-color: rgba(3, 4, 3, 0.705) !important;
+    }
+  }
 
 @media only screen and (max-width: 768px) {
     .App {

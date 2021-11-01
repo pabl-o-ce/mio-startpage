@@ -12,6 +12,7 @@ body {
   color: #29FD2E;
   position: relative;
   width: 100%;
+  overflow-x: hidden;
 }
 
 input {
@@ -19,29 +20,6 @@ input {
   -webkit-box-sizing:border-box;
   -moz-box-sizing: border-box;
 }
-
-.btn {
-  background-color: hsla(0, 0%, 2%, 0.38) !important;
-  color: #0076FF !important;
-  font-family: 'Exo' !important;
-  font-size: 20px !important;
-  font-weight: bold !important;
-  text-decoration: none;
-  border: none !important;
-}
-
-.pl-7 {
-  padding-left: 48px !important;
-}
-.pr-7 {
-  padding-right: 48px !important;
-}
-
-.btn-outline:hover, [open]>.btn-outline {
-  color: #29fd2e !important;
-  background-color: rgba(3, 4, 3, 0.705) !important;
-}
-
 
 .rotate {
   animation: rotation 120s infinite linear;
@@ -54,4 +32,13 @@ input {
   to {
     transform: rotate(359deg);
   }
+}
+@keyframes fadeOut {
+  0%   { opacity:1; }
+  50%  { opacity:.4; }
+  100% { opacity:1; }
+}
+
+.fadeOut {
+  animation: fadeOut 10s infinite linear;
 }
