@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/mio-startpage/static/css/main.57be1a4e.chunk.css",
-    "main.js": "/mio-startpage/static/js/main.128c5a0c.chunk.js",
-    "main.js.map": "/mio-startpage/static/js/main.128c5a0c.chunk.js.map",
+    "main.css": "/mio-startpage/static/css/main.662b1611.chunk.css",
+    "main.js": "/mio-startpage/static/js/main.4e6d2e5e.chunk.js",
+    "main.js.map": "/mio-startpage/static/js/main.4e6d2e5e.chunk.js.map",
     "runtime-main.js": "/mio-startpage/static/js/runtime-main.d73af716.js",
     "runtime-main.js.map": "/mio-startpage/static/js/runtime-main.d73af716.js.map",
     "static/js/2.bdc6e03e.chunk.js": "/mio-startpage/static/js/2.bdc6e03e.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.6977eb13.chunk.js": "/mio-startpage/static/js/3.6977eb13.chunk.js",
     "static/js/3.6977eb13.chunk.js.map": "/mio-startpage/static/js/3.6977eb13.chunk.js.map",
     "index.html": "/mio-startpage/index.html",
-    "static/css/main.57be1a4e.chunk.css.map": "/mio-startpage/static/css/main.57be1a4e.chunk.css.map",
+    "static/css/main.662b1611.chunk.css.map": "/mio-startpage/static/css/main.662b1611.chunk.css.map",
     "static/js/2.bdc6e03e.chunk.js.LICENSE.txt": "/mio-startpage/static/js/2.bdc6e03e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d73af716.js",
     "static/js/2.bdc6e03e.chunk.js",
-    "static/css/main.57be1a4e.chunk.css",
-    "static/js/main.128c5a0c.chunk.js"
+    "static/css/main.662b1611.chunk.css",
+    "static/js/main.4e6d2e5e.chunk.js"
   ]
 }
