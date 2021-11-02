@@ -1,6 +1,6 @@
 {
   "name": "mio-startpage",
-  "homepage": "http://pablocarreraest.github.io/mio-startpage",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
