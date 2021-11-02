@@ -1,10 +1,9 @@
-import React from 'react';
 import './App.scss';
 import { Header } from './Header';
 import { Search } from './Search';
 import { Bookmark } from './Bookmark';
 
-function App() {
+const App = () : JSX.Element => {
   return (
     <div className="App">
       <Header/>

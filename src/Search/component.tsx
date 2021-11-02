@@ -2,7 +2,7 @@ import React, { InputHTMLAttributes } from 'react';
 
 import './style.scss';
 
-const Search: React.FC = () => {
+const Search = (): JSX.Element => {
 
   const [search, setSearch] = React.useState<string>('');
 

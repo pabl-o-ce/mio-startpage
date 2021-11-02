@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.scss';
 
-const Bookmark: React.FC = () => (
+const Bookmark = (): JSX.Element => (
   <section className="app-bookmark d-flex flex-justify-center flex-wrap">
     <div>
 
