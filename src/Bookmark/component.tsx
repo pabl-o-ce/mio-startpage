@@ -46,14 +46,8 @@ const Bookmark = (): JSX.Element => (
     <a className="bmk btn box-shadow-none" href="https://www.apollographql.com/docs/">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/apollo-graphql.svg`} width="25"/>
     </a>
-    <a className="bmk btn box-shadow-none" href="https://docs.docker.com/">
-      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/docker.svg`} width="25"/>
-    </a>
     <a className="bmk btn box-shadow-none" href="https://jestjs.io/docs/getting-started">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/jest.svg`} width="25"/>
-    </a>
-    <a className="bmk btn box-shadow-none" href="https://kubernetes.io/docs/home/">
-      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/kubernetes.svg`} width="25"/>
     </a>
     <a className="bmk btn box-shadow-none" href="https://lodash.com/">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/lodash.svg`} width="25"/>
@@ -63,6 +57,12 @@ const Bookmark = (): JSX.Element => (
     </a>
     <a className="bmk btn box-shadow-none" href="https://primer.style/css/">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/primer.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://docs.docker.com/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/docker.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://kubernetes.io/docs/home/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/kubernets.svg`} width="25"/>
     </a>
     <a className="bmk btn box-shadow-none" href="https://my.vultr.com/">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/vultr.svg`} width="25"/>
