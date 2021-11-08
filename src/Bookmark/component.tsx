@@ -37,8 +37,29 @@ const Bookmark = (): JSX.Element => (
     <a className="bmk btn box-shadow-none" href="https://reactjs.org/docs/getting-started.html">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/react.svg`} width="25"/>
     </a>
+    <a className="bmk btn box-shadow-none" href="https://nextjs.org/docs/getting-started">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/nextjs.svg`} width="25"/>
+    </a>
     <a className="bmk btn box-shadow-none" href="https://www.rust-lang.org/learn">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/rust.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://www.apollographql.com/docs/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/apollo-graphql.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://docs.docker.com/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/docker.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://jestjs.io/docs/getting-started">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/jest.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://kubernetes.io/docs/home/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/kubernetes.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://lodash.com/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/lodash.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://webpack.js.org/concepts/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/webpack.svg`} width="25"/>
     </a>
     <a className="bmk btn box-shadow-none" href="https://primer.style/css/">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/primer.svg`} width="25"/>
