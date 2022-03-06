@@ -55,11 +55,14 @@ const Bookmark = (): JSX.Element => (
     <a className="bmk btn box-shadow-none" href="https://webpack.js.org/concepts/">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/webpack.svg`} width="25"/>
     </a>
-    <a className="bmk btn box-shadow-none" href="https://primer.style/css/">
-      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/primer.svg`} width="25"/>
-    </a>
     <a className="bmk btn box-shadow-none" href="https://tailwindcss.com/docs">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/tailwind.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://heroicons.com/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/heroicons.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://primer.style/css/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/primer.svg`} width="25"/>
     </a>
     <a className="bmk btn box-shadow-none" href="https://docs.docker.com/">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/docker.svg`} width="25"/>
