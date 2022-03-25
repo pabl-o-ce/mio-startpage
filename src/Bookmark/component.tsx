@@ -31,6 +31,12 @@ const Bookmark = (): JSX.Element => (
     <a className="bmk btn box-shadow-none" href="https://app.crowdsec.net/">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/crowdsec.svg`} width="25"/>
     </a>
+    <a className="bmk btn box-shadow-none" href="https://cloud2.influxdata.com/signup">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/influxdb.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://poscye.grafana.net/login">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/grafana.svg`} width="25"/>
+    </a>
     <a className="bmk btn box-shadow-none" href="https://www.typescriptlang.org/docs/">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/typescript.svg`} width="25"/>
     </a>
