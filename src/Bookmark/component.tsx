@@ -79,8 +79,14 @@ const Bookmark = (): JSX.Element => (
     <a className="bmk btn box-shadow-none" href="https://kubernetes.io/docs/home/">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/kubernets.svg`} width="25"/>
     </a>
+    <a className="bmk btn box-shadow-none" href="https://console.hetzner.cloud">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/hetzner.svg`} width="25"/>
+    </a>
     <a className="bmk btn box-shadow-none" href="https://my.vultr.com/">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/vultr.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://vercel.com/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/vercel.svg`} width="25"/>
     </a>
     <a className="bmk btn box-shadow-none" href="https://poscye.signin.aws.amazon.com/console">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/aws.svg`} width="25"/>
