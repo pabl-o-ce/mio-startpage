@@ -103,6 +103,9 @@ const Bookmark = (): JSX.Element => (
     <a className="bmk btn box-shadow-none" href="https://wiki.archlinux.org/">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/archlinux.svg`} width="25"/>
     </a>
+    <a className="bmk btn box-shadow-none" href="https://web.telegram.org/k/">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/telegram.svg`} width="25"/>
+    </a>
     <a className="bmk btn box-shadow-none" href="https://web.whatsapp.com/">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/whatsapp.svg`} width="25"/>
     </a>
