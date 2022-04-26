@@ -4,11 +4,11 @@ import './style.scss';
 
 const Bookmark = (): JSX.Element => (
   <section className="app-bookmark d-flex flex-justify-center flex-wrap">
-    <div>
-
-    </div>
     <a className="bmk btn box-shadow-none" href="https://outlook.office.com/mail/inbox">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/email.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://mail.protonmail.com">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/protonmail.svg`} width="25"/>
     </a>
     <a className="bmk btn box-shadow-none" href="https://reddit.com">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/reddit.svg`} width="25"/>
