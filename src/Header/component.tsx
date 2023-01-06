@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import './style.scss';
 
-let time = new Date().toLocaleString();
+// let time = new Date().toLocaleString();
 
 const Header = (): JSX.Element => {
   const [today, setDate] = React.useState<Date>(new Date());
