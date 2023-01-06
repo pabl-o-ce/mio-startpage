@@ -4,7 +4,7 @@ import './style.scss';
 
 const Bookmark = (): JSX.Element => (
   <section className="app-bookmark d-flex flex-justify-center flex-wrap">
-    <a className="bmk btn box-shadow-none" href="https://outlook.office.com/mail/inbox">
+    <a className="bmk btn box-shadow-none" href="https://mail.poscye.com/SOGo">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/email.svg`} width="25"/>
     </a>
     <a className="bmk btn box-shadow-none" href="https://mail.protonmail.com">
@@ -27,6 +27,9 @@ const Bookmark = (): JSX.Element => (
     </a>
     <a className="bmk btn box-shadow-none" href="https://www.github.com/">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/github.svg`} width="25"/>
+    </a>
+    <a className="bmk btn box-shadow-none" href="https://chat.openai.com/chat">
+      <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/tg.svg`} width="25"/>
     </a>
     <a className="bmk btn box-shadow-none" href="https://www.notion.so">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/notion.svg`} width="25"/>
@@ -130,9 +133,9 @@ const Bookmark = (): JSX.Element => (
     <a className="bmk btn box-shadow-none" href="https://1337x.to">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/1337x.svg`} width="25"/>
     </a>
-    <a className="bmk btn box-shadow-none" href="https://torrentgalaxy.pw">
+    {/* <a className="bmk btn box-shadow-none" href="https://torrentgalaxy.pw">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/tg.svg`} width="25"/>
-    </a>
+    </a> */}
     {/* <a className="bmk btn box-shadow-none" href="https://onehack.us/">OneHack</a> */}
   </section>
 );
