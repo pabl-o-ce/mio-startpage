@@ -16,17 +16,37 @@ const Header = (): JSX.Element => {
   const time = today.toLocaleTimeString('en', { hour: 'numeric', hour12: true, minute: 'numeric' });
 
   return (
-  <section className="app-header pb-2">
-      <div className="header-main d-flex border-bottom">
-        <div className="header-label">
-          <p className="ht h1 text-left mb-1">Bienvenue, monsieur</p>
-        </div>
-        <div className="header-time text-right">
-          <p className="ht h1 mb-1">{time}</p>
-          <p className="ht-2 h2 mt-3">{date}</p>
-        </div>
+  // <section className="app-header pb-2">
+  //     <div className="header-main d-flex border-bottom">
+  //       <div className="header-label">
+  //         <p className="ht h1 text-left mb-1">Bienvenue, monsieur</p>
+  //       </div>
+  //       <div className="header-time text-right">
+  //         <p className="ht h1 mb-1">{time}</p>
+  //         <p className="ht-2 h2 mt-3">{date}</p>
+  //       </div>
+  //     </div>
+  // </section>
+
+
+  <nav className="bg-dark px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+    <div className="container flex flex-wrap items-center justify-between mx-auto">
+      <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+        <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <span>{time}</span>
+          </li>
+          <li>
+            <span>|</span>
+          </li>
+          <li>
+            <span>{date}</span>
+          </li>
+        </ul>
       </div>
-  </section>
+    </div>
+  </nav>
+
 )};
 
 export default Header;
