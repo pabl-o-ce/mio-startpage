@@ -3,7 +3,7 @@ import React from 'react';
 import './style.scss';
 
 const Bookmark = (): JSX.Element => (
-  <section className="relative z-50 flex justify-center flex-wrap items-center">
+  <section className="max-h-60 relative z-50 flex flex-col justify-start flex-wrap items-center">
     <a className="bmk btn box-shadow-none" href="https://mail.poscye.com/SOGo">
       <img className="icon-bookmark" src={`${process.env.PUBLIC_URL}/assets/img/email.svg`} width="25"/>
     </a>
