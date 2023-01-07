@@ -32,7 +32,7 @@ const Search = (): JSX.Element => {
     }
   };
   return (
-    <section className="app-search pt-10 pb-6 relative z-50 border-bottom">
+    <section className="app-search pt-10 pb-6 relative z-50 border-bottom mt-4 md:mt-20">
         <img className="search-icon font-bold absolute top-12 left-4" src={process.env.PUBLIC_URL + '/assets/img/shuttle.svg'} width="45" alt='icon'/>
         <input className="w-full h-16 font-bold text-4xl indent-16 rounded caret-transparent bg-[#000600] color-[#29fd2e] block search-input" value={search} onChange={handleChange} onKeyDown={handleKeyDown} type="text" placeholder="" aria-label="Full-width input" autoFocus/>
     </section>
