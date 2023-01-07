@@ -32,20 +32,9 @@ const Search = (): JSX.Element => {
     }
   };
   return (
-    <section className="app-search pb-6 border-bottom">
-        <img className="search-icon" src={process.env.PUBLIC_URL + '/assets/img/shuttle.svg'} width="45"/>
-        <input className="form-control input-block input-dark" value={search} onChange={handleChange} onKeyDown={handleKeyDown} type="text" placeholder="" aria-label="Full-width input" autoFocus/>
-        {/* <div className="d-flex flex-justify-center mt-6">
-          <a href={`https://www.google.com/search?safe=strict&q=${search}`} className="btn box-shadow-none" type="button">
-            <img className="search-google" src={`${process.env.PUBLIC_URL}/assets/img/google.svg`} width="22"/>
-          </a>
-          <a href={`https://www.duckduckgo.com/?q=${search}`} className="btn box-shadow-none" type="button">
-            <img className="search-duckduckgo" src={`${process.env.PUBLIC_URL}/assets/img/duckduckgo.svg`} width="25"/>
-          </a>
-          <a href={`https://www.amazon.com/s?k=${search}`} className="btn box-shadow-none" type="button">
-            <img className="search-amazon" src={`${process.env.PUBLIC_URL}/assets/img/amazon.svg`} width="25"/>
-          </a>
-        </div> */}
+    <section className="app-search pt-10 pb-6 relative z-50 border-bottom">
+        <img className="search-icon font-bold absolute top-12 left-4" src={process.env.PUBLIC_URL + '/assets/img/shuttle.svg'} width="45" alt='icon'/>
+        <input className="w-full h-16 font-bold text-4xl indent-16 rounded caret-transparent bg-[#000600] color-[#29fd2e] block search-input" value={search} onChange={handleChange} onKeyDown={handleKeyDown} type="text" placeholder="" aria-label="Full-width input" autoFocus/>
     </section>
   )};
 
