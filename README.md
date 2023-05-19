@@ -3,5 +3,5 @@
 ## Docker setup
 
 ```sh
-docker run -it -p 3000:3000 pabl-o-ce/mio-startpage:latest
+docker run -d -p 3000:3000 ghcr.io/pabl-o-ce/mio-startpage:main
 ```
