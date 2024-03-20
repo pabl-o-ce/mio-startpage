@@ -23,7 +23,7 @@ RUN pnpm run build
 
 # Final stage for running the app
 FROM base
-COPY --from=build /app /app
+COPY --from=build /app.svelte-kit /app/.svelte-kit
 COPY --from=prod-deps /app/node_modules /app/node_modules
 
 # Expose the port the app runs on
