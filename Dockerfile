@@ -23,8 +23,8 @@ RUN pnpm run build
 
 # Final stage for running the app
 FROM base
+COPY --from=build /app /app
 COPY --from=prod-deps /app/node_modules /app/node_modules
-COPY --from=build /app/dist /app/dist
 
 # Expose the port the app runs on
 EXPOSE 8000
