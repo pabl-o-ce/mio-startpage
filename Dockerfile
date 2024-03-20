@@ -1,23 +1,33 @@
-# Choose node-alpine as base image
-FROM node:alpine
+# Use the official Node.js Slim image as the base
+FROM node:20-slim AS base
 
-# Set working directory
-WORKDIR /usr/src/app
+# Set environment variables for pnpm
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
 
-# Copy package.json and package-lock.json
-COPY package*.json ./
+# Enable Corepack (pnpm) in the base image
+RUN corepack enable
 
-# Install dependencies using yarn
-RUN yarn install
+# Copy the entire project
+COPY . /app
+WORKDIR /app
 
-# Copy the remaining files
-COPY . .
+# Stage for installing production dependencies
+FROM base AS prod-deps
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --prod --frozen-lockfile
 
-# Build the Next.js app
-RUN yarn build
+# Stage for building the app
+FROM base AS build
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
+RUN pnpm run build
 
-# Expose port 3000
-EXPOSE 3000
+# Final stage for running the app
+FROM base
+COPY --from=prod-deps /app/node_modules /app/node_modules
+COPY --from=build /app/dist /app/dist
 
-# Start the Next.js app
-CMD ["yarn", "start"]
+# Expose the port the app runs on
+EXPOSE 8000
+
+# Start the app
+CMD ["pnpm", "start"]
