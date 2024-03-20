@@ -46,8 +46,8 @@ const bookmarks = [
     icon: "tg.svg",
   },
   {
-    title: "MicrosoftCopilot",
-    url: "https://copilot.microsoft.com",
+    title: "Claude",
+    url: "https://claude.ai/chat",
     icon: "tg.svg",
   },
   {
