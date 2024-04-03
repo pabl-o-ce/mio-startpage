@@ -27,4 +27,3 @@ out
 
 # Ignore TypeScript build artifacts
 *.tsbuildinfo
-pnpm-lock.yaml
