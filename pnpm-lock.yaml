@@ -7,7 +7,7 @@ settings:
 devDependencies:
   '@cloudflare/workers-types':
     specifier: ^4.20240222.0
-    version: 4.20240402.0
+    version: 4.20240405.0
   '@sveltejs/adapter-auto':
     specifier: ^3.1.1
     version: 3.2.0(@sveltejs/kit@2.5.5)
@@ -49,7 +49,7 @@ devDependencies:
     version: 5.2.8(sass@1.74.1)
   wrangler:
     specifier: ^3.30.0
-    version: 3.48.0(@cloudflare/workers-types@4.20240402.0)
+    version: 3.48.0(@cloudflare/workers-types@4.20240405.0)
 
 packages:
 
@@ -117,8 +117,8 @@ packages:
     dev: true
     optional: true
 
-  /@cloudflare/workers-types@4.20240402.0:
-    resolution: {integrity: sha512-GEtg71Gs5iBIQBQB0sBkEOJrmJGpenT2XAODwbvfWADwQpDxgEQfGrcOhaJfLPCfvNpKaMxcBlH9cekWwQEsLQ==}
+  /@cloudflare/workers-types@4.20240405.0:
+    resolution: {integrity: sha512-sEVOhyOgXUwfLkgHqbLZa/sfkSYrh7/zLmI6EZNibPaVPvAnAcItbNNl3SAlLyLKuwf8m4wAIAgu9meKWCvXjg==}
     dev: true
 
   /@cspotcode/source-map-support@0.8.1:
@@ -979,11 +979,11 @@ packages:
       '@sveltejs/kit': ^2.0.0
       wrangler: ^3.28.4
     dependencies:
-      '@cloudflare/workers-types': 4.20240402.0
+      '@cloudflare/workers-types': 4.20240405.0
       '@sveltejs/kit': 2.5.5(@sveltejs/vite-plugin-svelte@3.0.2)(svelte@4.2.12)(vite@5.2.8)
       esbuild: 0.19.12
       worktop: 0.8.0-next.18
-      wrangler: 3.48.0(@cloudflare/workers-types@4.20240402.0)
+      wrangler: 3.48.0(@cloudflare/workers-types@4.20240405.0)
     dev: true
 
   /@sveltejs/kit@2.5.5(@sveltejs/vite-plugin-svelte@3.0.2)(svelte@4.2.12)(vite@5.2.8):
@@ -2565,7 +2565,7 @@ packages:
       regexparam: 3.0.0
     dev: true
 
-  /wrangler@3.48.0(@cloudflare/workers-types@4.20240402.0):
+  /wrangler@3.48.0(@cloudflare/workers-types@4.20240405.0):
     resolution: {integrity: sha512-Wv7JS6FyX1j9HkaM6WL3fmTzBMAYc4hPSyZCuxuH55hkJDX/7ts+YAgsaN1U8rKoDrV3FVSgBfI9TyqP9iuM8Q==}
     engines: {node: '>=16.17.0'}
     hasBin: true
@@ -2576,7 +2576,7 @@ packages:
         optional: true
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.1
-      '@cloudflare/workers-types': 4.20240402.0
+      '@cloudflare/workers-types': 4.20240405.0
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
       '@esbuild-plugins/node-modules-polyfill': 0.2.2(esbuild@0.17.19)
       blake3-wasm: 2.1.5
