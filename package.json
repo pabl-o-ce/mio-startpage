@@ -29,5 +29,11 @@
     "wrangler": "^3.30.0"
   },
   "type": "module",
-  "packageManager": "pnpm@9.1.2"
+  "packageManager": "pnpm@9.1.2",
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "clsx": "^2.1.1",
+    "svelte-motion": "^0.12.2",
+    "tailwind-merge": "^2.3.0"
+  }
 }

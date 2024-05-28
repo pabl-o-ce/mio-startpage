@@ -3,6 +3,7 @@
     import Search from './../components/search.svelte';
     import Bookmarks from './../components/bookmarks.svelte';
     import "../app.scss"
+    import BackgroundBeams from '../components/ui/BackgroundBeams.svelte';
 </script>
 <style lang="postcss">
     :global(html) {
@@ -28,3 +29,4 @@
     <img class="absolute left-0 bottom-0 animate-pulse rotate0" src={"/img/stars.svg"} alt="" width="50%"/>
     <img class="absolute top-0 right-0 animate-pulse rotate" src={"/img/stars.svg"} alt="" width="50%"/>
 </main>
+<BackgroundBeams />
