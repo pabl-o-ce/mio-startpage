@@ -56,7 +56,7 @@ importers:
         version: 3.4.3
       tslib:
         specifier: ^2.6.2
-        version: 2.6.2
+        version: 2.6.3
       typescript:
         specifier: ^5.3.3
         version: 5.4.5
@@ -1412,8 +1412,8 @@ packages:
   tslib@2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
 
-  tslib@2.6.2:
-    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
+  tslib@2.6.3:
+    resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
 
   typescript@5.4.5:
     resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
@@ -1977,7 +1977,7 @@ snapshots:
   capnp-ts@0.7.0:
     dependencies:
       debug: 4.3.5
-      tslib: 2.6.2
+      tslib: 2.6.3
     transitivePeerDependencies:
       - supports-color
 
@@ -2650,7 +2650,7 @@ snapshots:
       popmotion: 11.0.5
       style-value-types: 5.1.2
       svelte: 4.2.17
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   svelte-preprocess@5.1.4(postcss-load-config@4.0.2(postcss@8.4.38))(postcss@8.4.38)(sass@1.77.4)(svelte@4.2.17)(typescript@5.4.5):
     dependencies:
@@ -2747,7 +2747,7 @@ snapshots:
 
   tslib@2.4.0: {}
 
-  tslib@2.6.2: {}
+  tslib@2.6.3: {}
 
   typescript@5.4.5: {}
 
