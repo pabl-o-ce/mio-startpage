@@ -2,8 +2,8 @@
     import { onMount } from 'svelte';
   
     let currentDate = new Date();
-    let date: string;
-    let time: string;
+    let date: string = $state();
+    let time: string = $state();
     onMount(() => {
         const updateInterval = 1000; // Update every 1000 milliseconds (1 second)
 
