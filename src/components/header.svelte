@@ -4,7 +4,9 @@
     let currentDate = new Date();
     let date: string = $state();
     let time: string = $state();
-    onMount(() => {
+
+    // Replace onMount with effect
+    $effect(() => {
         const updateInterval = 1000; // Update every 1000 milliseconds (1 second)
 
         const updateDate = () => {
@@ -13,11 +15,13 @@
             time = currentDate.toLocaleTimeString('en', { hour: 'numeric', hour12: true, minute: 'numeric' });
         };
 
-        updateDate()
+        // Initial update
+        updateDate();
 
+        // Set up interval
         const intervalId = setInterval(updateDate, updateInterval);
 
-        // Cleanup function to clear the interval when the component is unmounted
+        // Return cleanup function
         return () => clearInterval(intervalId);
     });
 </script>
