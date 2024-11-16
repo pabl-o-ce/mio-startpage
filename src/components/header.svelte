@@ -1,25 +1,17 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
-  
-    let currentDate = new Date();
-    let date: string = $state();
-    let time: string = $state();
+    let currentDate = $state(new Date());
+    let date: string = $derived(`${currentDate.toLocaleDateString('en', { weekday: 'long' })}, ${currentDate.getDate()} ${currentDate.toLocaleDateString('en', { month: 'long' })}`);
+    let time: string = $derived(currentDate.toLocaleTimeString('en', { hour: 'numeric', hour12: true, minute: 'numeric' }));
 
     // Replace onMount with effect
-    $effect(() => {
-        const updateInterval = 1000; // Update every 1000 milliseconds (1 second)
-
-        const updateDate = () => {
-            currentDate = new Date();
-            date = `${currentDate.toLocaleDateString('en', { weekday: 'long' })}, ${currentDate.getDate()} ${currentDate.toLocaleDateString('en', { month: 'long' })}`;
-            time = currentDate.toLocaleTimeString('en', { hour: 'numeric', hour12: true, minute: 'numeric' });
-        };
-
-        // Initial update
-        updateDate();
+    $effect.root(() => {
+        // Update every 1000 milliseconds (1 second)
+        const updateInterval = 1000;
 
         // Set up interval
-        const intervalId = setInterval(updateDate, updateInterval);
+        const intervalId = setInterval(() => {
+            currentDate = new Date();
+        }, updateInterval);
 
         // Return cleanup function
         return () => clearInterval(intervalId);
