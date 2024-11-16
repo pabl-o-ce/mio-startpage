@@ -82,31 +82,6 @@ mio-startpage/
 └── [Configuration Files]
 ```
 
-## ⚙️ Configuration
-
-### Environment Variables
-
-Create a `.env` file in the root directory:
-
-```env
-# Add your environment variables here
-PUBLIC_SOME_KEY=your_value
-```
-
-### Customizing the Theme
-
-Modify `tailwind.config.js` to customize colors, spacing, and other design tokens:
-
-```javascript
-module.exports = {
-  theme: {
-    extend: {
-      // Add your customizations here
-    }
-  }
-}
-```
-
 ## 🧩 Features in Detail
 
 ### Keyboard Shortcuts
@@ -140,4 +115,4 @@ Dark mode automatically syncs with your system preferences but can be toggled ma
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by PΛBLØ ᄃΞ
