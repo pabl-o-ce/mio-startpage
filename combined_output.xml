@@ -1,0 +1,827 @@
+<file_overview>
+Total files: 25
+Date generated: 2024-11-d 14:04:54
+Folder Structure:
+├── .github/
+│   └── workflows/
+├── .svelte-kit/
+│   ├── generated/
+│   │   ├── client/
+│   │   │   ├── nodes/
+│   │   │   │   ├── 0.js
+│   │   │   │   ├── 1.js
+│   │   │   │   └── 2.js
+│   │   │   ├── app.js
+│   │   │   └── matchers.js
+│   │   ├── server/
+│   │   │   └── internal.js
+│   │   ├── root.js
+│   ├── types/
+│   │   ├── src/
+│   │   │   └── routes/
+│   │   │       └── $types.d.ts
+│   │   └── route_meta_data.json
+│   ├── ambient.d.ts
+│   ├── non-ambient.d.ts
+│   └── tsconfig.json
+├── .wrangler/
+│   └── state/
+│       └── v3/
+│           └── workflows/
+├── .yarn/
+│   ├── cache/
+│   └── releases/
+├── build/
+│   ├── assets/
+│   │   ├── fonts/
+│   │   └── img/
+│   ├── manifest.json
+├── public/
+│   └── assets/
+│       └── img/
+├── src/
+│   ├── components/
+│   │   ├── ui/
+│   ├── lib/
+│   │   ├── utils/
+│   │   │   └── cn.ts
+│   │   └── index.ts
+│   ├── routes/
+│   ├── app.d.ts
+├── static/
+│   ├── fonts/
+│   ├── img/
+│   ├── manifest.json
+├── Dockerfile
+├── README.md
+├── package.json
+├── postcss.config.js
+├── renovate.json
+├── svelte.config.js
+├── tailwind.config.js
+├── tsconfig.json
+└── vite.config.ts
+
+Files included:
+- .svelte-kit/ambient.d.ts
+- .svelte-kit/generated/client/app.js
+- .svelte-kit/generated/client/matchers.js
+- .svelte-kit/generated/client/nodes/0.js
+- .svelte-kit/generated/client/nodes/1.js
+- .svelte-kit/generated/client/nodes/2.js
+- .svelte-kit/generated/root.js
+- .svelte-kit/generated/server/internal.js
+- .svelte-kit/non-ambient.d.ts
+- .svelte-kit/tsconfig.json
+- .svelte-kit/types/route_meta_data.json
+- .svelte-kit/types/src/routes/$types.d.ts
+- README.md
+- build/manifest.json
+- package.json
+- postcss.config.js
+- renovate.json
+- src/app.d.ts
+- src/lib/index.ts
+- src/lib/utils/cn.ts
+- static/manifest.json
+- svelte.config.js
+- tailwind.config.js
+- tsconfig.json
+- vite.config.ts
+</file_overview>
+
+<file path=".svelte-kit/ambient.d.ts" lines="275" modified="2024-11-14 17:42:50">
+// this file is generated — do not edit it
+
+
+/// <reference types="@sveltejs/kit" />
+
+/**
+ * Environment variables [loaded by Vite](https://vitejs.dev/guide/env-and-mode.html#env-files) from `.env` files and `process.env`. Like [`$env/dynamic/private`](https://kit.svelte.dev/docs/modules#$env-dynamic-private), this module cannot be imported into client-side code. This module only includes variables that _do not_ begin with [`config.kit.env.publicPrefix`](https://kit.svelte.dev/docs/configuration#env) _and do_ start with [`config.kit.env.privatePrefix`](https://kit.svelte.dev/docs/configuration#env) (if configured).
+ * 
+ * _Unlike_ [`$env/dynamic/private`](https://kit.svelte.dev/docs/modules#$env-dynamic-private), the values exported from this module are statically injected into your bundle at build time, enabling optimisations like dead code elimination.
+ * 
+ * ```ts
+ * import { API_KEY } from '$env/static/private';
+ * ```
+ * 
+ * Note that all environment variables referenced in your code should be declared (for example in an `.env` file), even if they don't have a value until the app is deployed:
+ * 
+ * ```
+ * MY_FEATURE_FLAG=""
+ * ```
+ * 
+ * You can override `.env` values from the command line like so:
+ * 
+ * ```bash
+ * MY_FEATURE_FLAG="enabled" npm run dev
+ * ```
+ */
+declare module '$env/static/private' {
+	export const NVM_INC: string;
+	export const COREPACK_ROOT: string;
+	export const NIX_PROFILES: string;
+	export const TERM_PROGRAM: string;
+	export const NODE: string;
+	export const NVM_CD_FLAGS: string;
+	export const _P9K_TTY: string;
+	export const npm_package_devDependencies_typescript: string;
+	export const INIT_CWD: string;
+	export const SHELL: string;
+	export const TERM: string;
+	export const npm_package_devDependencies_vite: string;
+	export const TMPDIR: string;
+	export const TERM_PROGRAM_VERSION: string;
+	export const WINDOWID: string;
+	export const npm_package_scripts_dev: string;
+	export const npm_package_private: string;
+	export const npm_package_devDependencies__sveltejs_kit: string;
+	export const npm_config_registry: string;
+	export const LC_ALL: string;
+	export const ZSH: string;
+	export const USER: string;
+	export const CUDA_HOME: string;
+	export const NVM_DIR: string;
+	export const ZSH_TMUX_TERM: string;
+	export const npm_package_dependencies_svelte_motion: string;
+	export const LS_COLORS: string;
+	export const npm_package_scripts_check_watch: string;
+	export const ALACRITTY_SOCKET: string;
+	export const COMMAND_MODE: string;
+	export const OPENAI_API_KEY: string;
+	export const PNPM_SCRIPT_SRC_DIR: string;
+	export const _ZSH_TMUX_FIXED_CONFIG: string;
+	export const ALACRITTY_LOG: string;
+	export const SSH_AUTH_SOCK: string;
+	export const FZF_BASE: string;
+	export const __CF_USER_TEXT_ENCODING: string;
+	export const npm_package_devDependencies_postcss: string;
+	export const npm_package_devDependencies_tslib: string;
+	export const npm_execpath: string;
+	export const PAGER: string;
+	export const ZSH_TMUX_CONFIG: string;
+	export const npm_package_devDependencies_svelte: string;
+	export const TMUX: string;
+	export const LSCOLORS: string;
+	export const npm_config_frozen_lockfile: string;
+	export const npm_package_dependencies_tailwind_merge: string;
+	export const PATH: string;
+	export const npm_package_scripts_pages_preview: string;
+	export const npm_config_engine_strict: string;
+	export const __CFBundleIdentifier: string;
+	export const PWD: string;
+	export const npm_package_devDependencies_tailwindcss: string;
+	export const npm_command: string;
+	export const npm_package_scripts_preview: string;
+	export const P9K_SSH: string;
+	export const EDITOR: string;
+	export const npm_lifecycle_event: string;
+	export const P9K_TTY: string;
+	export const npm_package_name: string;
+	export const npm_package_devDependencies__sveltejs_vite_plugin_svelte: string;
+	export const npm_package_packageManager: string;
+	export const NODE_PATH: string;
+	export const npm_package_scripts_build: string;
+	export const npm_package_devDependencies_sass: string;
+	export const TMUX_PANE: string;
+	export const XPC_FLAGS: string;
+	export const NIX_SSL_CERT_FILE: string;
+	export const npm_config_node_gyp: string;
+	export const XPC_SERVICE_NAME: string;
+	export const npm_package_version: string;
+	export const npm_package_devDependencies__sveltejs_adapter_auto: string;
+	export const npm_package_devDependencies_autoprefixer: string;
+	export const npm_package_devDependencies_svelte_check: string;
+	export const HOME: string;
+	export const SHLVL: string;
+	export const PYENV_SHELL: string;
+	export const npm_package_type: string;
+	export const HOMEBREW_PREFIX: string;
+	export const npm_package_scripts_pages_deploy: string;
+	export const LOGNAME: string;
+	export const LESS: string;
+	export const npm_package_devDependencies__sveltejs_adapter_cloudflare: string;
+	export const ALACRITTY_WINDOW_ID: string;
+	export const npm_package_devDependencies__cloudflare_workers_types: string;
+	export const npm_lifecycle_script: string;
+	export const XDG_DATA_DIRS: string;
+	export const npm_package_devDependencies_wrangler: string;
+	export const NVM_BIN: string;
+	export const npm_config_user_agent: string;
+	export const npm_package_dependencies_clsx: string;
+	export const _P9K_SSH_TTY: string;
+	export const npm_package_dependencies__tailwindcss_aspect_ratio: string;
+	export const npm_package_scripts_check: string;
+	export const COLORTERM: string;
+	export const npm_node_execpath: string;
+	export const NODE_ENV: string;
+}
+
+/**
+ * Similar to [`$env/static/private`](https://kit.svelte.dev/docs/modules#$env-static-private), except that it only includes environment variables that begin with [`config.kit.env.publicPrefix`](https://kit.svelte.dev/docs/configuration#env) (which defaults to `PUBLIC_`), and can therefore safely be exposed to client-side code.
+ * 
+ * Values are replaced statically at build time.
+ * 
+ * ```ts
+ * import { PUBLIC_BASE_URL } from '$env/static/public';
+ * ```
+ */
+declare module '$env/static/public' {
+	
+}
+
+/**
+ * This module provides access to runtime environment variables, as defined by the platform you're running on. For example if you're using [`adapter-node`](https://github.com/sveltejs/kit/tree/main/packages/adapter-node) (or running [`vite preview`](https://kit.svelte.dev/docs/cli)), this is equivalent to `process.env`. This module only includes variables that _do not_ begin with [`config.kit.env.publicPrefix`](https://kit.svelte.dev/docs/configuration#env) _and do_ start with [`config.kit.env.privatePrefix`](https://kit.svelte.dev/docs/configuration#env) (if configured).
+ * 
+ * This module cannot be imported into client-side code.
+ * 
+ * Dynamic environment variables cannot be used during prerendering.
+ * 
+ * ```ts
+ * import { env } from '$env/dynamic/private';
+ * console.log(env.DEPLOYMENT_SPECIFIC_VARIABLE);
+ * ```
+ * 
+ * > In `dev`, `$env/dynamic` always includes environment variables from `.env`. In `prod`, this behavior will depend on your adapter.
+ */
+declare module '$env/dynamic/private' {
+	export const env: {
+		NVM_INC: string;
+		COREPACK_ROOT: string;
+		NIX_PROFILES: string;
+		TERM_PROGRAM: string;
+		NODE: string;
+		NVM_CD_FLAGS: string;
+		_P9K_TTY: string;
+		npm_package_devDependencies_typescript: string;
+		INIT_CWD: string;
+		SHELL: string;
+		TERM: string;
+		npm_package_devDependencies_vite: string;
+		TMPDIR: string;
+		TERM_PROGRAM_VERSION: string;
+		WINDOWID: string;
+		npm_package_scripts_dev: string;
+		npm_package_private: string;
+		npm_package_devDependencies__sveltejs_kit: string;
+		npm_config_registry: string;
+		LC_ALL: string;
+		ZSH: string;
+		USER: string;
+		CUDA_HOME: string;
+		NVM_DIR: string;
+		ZSH_TMUX_TERM: string;
+		npm_package_dependencies_svelte_motion: string;
+		LS_COLORS: string;
+		npm_package_scripts_check_watch: string;
+		ALACRITTY_SOCKET: string;
+		COMMAND_MODE: string;
+		OPENAI_API_KEY: string;
+		PNPM_SCRIPT_SRC_DIR: string;
+		_ZSH_TMUX_FIXED_CONFIG: string;
+		ALACRITTY_LOG: string;
+		SSH_AUTH_SOCK: string;
+		FZF_BASE: string;
+		__CF_USER_TEXT_ENCODING: string;
+		npm_package_devDependencies_postcss: string;
+		npm_package_devDependencies_tslib: string;
+		npm_execpath: string;
+		PAGER: string;
+		ZSH_TMUX_CONFIG: string;
+		npm_package_devDependencies_svelte: string;
+		TMUX: string;
+		LSCOLORS: string;
+		npm_config_frozen_lockfile: string;
+		npm_package_dependencies_tailwind_merge: string;
+		PATH: string;
+		npm_package_scripts_pages_preview: string;
+		npm_config_engine_strict: string;
+		__CFBundleIdentifier: string;
+		PWD: string;
+		npm_package_devDependencies_tailwindcss: string;
+		npm_command: string;
+		npm_package_scripts_preview: string;
+		P9K_SSH: string;
+		EDITOR: string;
+		npm_lifecycle_event: string;
+		P9K_TTY: string;
+		npm_package_name: string;
+		npm_package_devDependencies__sveltejs_vite_plugin_svelte: string;
+		npm_package_packageManager: string;
+		NODE_PATH: string;
+		npm_package_scripts_build: string;
+		npm_package_devDependencies_sass: string;
+		TMUX_PANE: string;
+		XPC_FLAGS: string;
+		NIX_SSL_CERT_FILE: string;
+		npm_config_node_gyp: string;
+		XPC_SERVICE_NAME: string;
+		npm_package_version: string;
+		npm_package_devDependencies__sveltejs_adapter_auto: string;
+		npm_package_devDependencies_autoprefixer: string;
+		npm_package_devDependencies_svelte_check: string;
+		HOME: string;
+		SHLVL: string;
+		PYENV_SHELL: string;
+		npm_package_type: string;
+		HOMEBREW_PREFIX: string;
+		npm_package_scripts_pages_deploy: string;
+		LOGNAME: string;
+		LESS: string;
+		npm_package_devDependencies__sveltejs_adapter_cloudflare: string;
+		ALACRITTY_WINDOW_ID: string;
+		npm_package_devDependencies__cloudflare_workers_types: string;
+		npm_lifecycle_script: string;
+		XDG_DATA_DIRS: string;
+		npm_package_devDependencies_wrangler: string;
+		NVM_BIN: string;
+		npm_config_user_agent: string;
+		npm_package_dependencies_clsx: string;
+		_P9K_SSH_TTY: string;
+		npm_package_dependencies__tailwindcss_aspect_ratio: string;
+		npm_package_scripts_check: string;
+		COLORTERM: string;
+		npm_node_execpath: string;
+		NODE_ENV: string;
+		[key: `PUBLIC_${string}`]: undefined;
+		[key: `${string}`]: string | undefined;
+	}
+}
+
+/**
+ * Similar to [`$env/dynamic/private`](https://kit.svelte.dev/docs/modules#$env-dynamic-private), but only includes variables that begin with [`config.kit.env.publicPrefix`](https://kit.svelte.dev/docs/configuration#env) (which defaults to `PUBLIC_`), and can therefore safely be exposed to client-side code.
+ * 
+ * Note that public dynamic environment variables must all be sent from the server to the client, causing larger network requests — when possible, use `$env/static/public` instead.
+ * 
+ * Dynamic environment variables cannot be used during prerendering.
+ * 
+ * ```ts
+ * import { env } from '$env/dynamic/public';
+ * console.log(env.PUBLIC_DEPLOYMENT_SPECIFIC_VARIABLE);
+ * ```
+ */
+declare module '$env/dynamic/public' {
+	export const env: {
+		[key: `PUBLIC_${string}`]: string | undefined;
+	}
+}
+</file>
+
+<file path=".svelte-kit/generated/client/app.js" lines="21" modified="2024-11-14 17:42:50">
+export { matchers } from './matchers.js';
+
+export const nodes = [
+	() => import('./nodes/0'),
+	() => import('./nodes/1'),
+	() => import('./nodes/2')
+];
+
+export const server_loads = [];
+
+export const dictionary = {
+		"/": [2]
+	};
+
+export const hooks = {
+	handleError: (({ error }) => { console.error(error) }),
+
+	reroute: (() => {})
+};
+
+export { default as root } from '../root.js';
+</file>
+
+<file path=".svelte-kit/generated/client/matchers.js" lines="1" modified="2024-11-14 17:42:50">
+export const matchers = {};
+</file>
+
+<file path=".svelte-kit/generated/client/nodes/0.js" lines="1" modified="2024-11-14 17:42:50">
+export { default as component } from "../../../../node_modules/.pnpm/@sveltejs+kit@2.5.16_@sveltejs+vite-plugin-svelte@4.0.0_svelte@5.2.0_vite@5.4.8_@types+node@2_sgy5mdzddo54pjoo3d4mv5hafe/node_modules/@sveltejs/kit/src/runtime/components/layout.svelte";
+</file>
+
+<file path=".svelte-kit/generated/client/nodes/1.js" lines="1" modified="2024-11-14 17:42:50">
+export { default as component } from "../../../../node_modules/.pnpm/@sveltejs+kit@2.5.16_@sveltejs+vite-plugin-svelte@4.0.0_svelte@5.2.0_vite@5.4.8_@types+node@2_sgy5mdzddo54pjoo3d4mv5hafe/node_modules/@sveltejs/kit/src/runtime/components/error.svelte";
+</file>
+
+<file path=".svelte-kit/generated/client/nodes/2.js" lines="1" modified="2024-11-14 17:42:50">
+export { default as component } from "../../../../src/routes/+page.svelte";
+</file>
+
+<file path=".svelte-kit/generated/root.js" lines="3" modified="2024-11-14 17:42:50">
+import { asClassComponent } from 'svelte/legacy';
+import Root from './root.svelte';
+export default asClassComponent(Root);
+</file>
+
+<file path=".svelte-kit/generated/server/internal.js" lines="34" modified="2024-11-14 17:42:50">
+import root from '../root.js';
+import { set_building, set_prerendering } from '__sveltekit/environment';
+import { set_assets } from '__sveltekit/paths';
+import { set_manifest, set_read_implementation } from '__sveltekit/server';
+import { set_private_env, set_public_env, set_safe_public_env } from '../../../node_modules/.pnpm/@sveltejs+kit@2.5.16_@sveltejs+vite-plugin-svelte@4.0.0_svelte@5.2.0_vite@5.4.8_@types+node@2_sgy5mdzddo54pjoo3d4mv5hafe/node_modules/@sveltejs/kit/src/runtime/shared-server.js';
+
+export const options = {
+	app_dir: "_app",
+	app_template_contains_nonce: false,
+	csp: {"mode":"auto","directives":{"upgrade-insecure-requests":false,"block-all-mixed-content":false},"reportOnly":{"upgrade-insecure-requests":false,"block-all-mixed-content":false}},
+	csrf_check_origin: true,
+	embedded: false,
+	env_public_prefix: 'PUBLIC_',
+	env_private_prefix: '',
+	hooks: null, // added lazily, via `get_hooks`
+	preload_strategy: "modulepreload",
+	root,
+	service_worker: false,
+	templates: {
+		app: ({ head, body, assets, nonce, env }) => "<!doctype html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\" />\n\t\t<link rel=\"icon\" href=\"" + assets + "/favicon.ico\" />\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n\t\t<meta name=\"theme-color\" content=\"#000000\" />\n\t\t<meta\n\t\t\tname=\"description\"\n\t\t\tcontent=\"mio startpage\"\n\t\t/>\n\t\t<link rel=\"apple-touch-icon\" href=\"" + assets + "/logo192.png\" />\n\t\t<link rel=\"manifest\" href=\"" + assets + "/manifest.json\" />\n\t\t" + head + "\n\t</head>\n\t<body data-sveltekit-preload-data=\"hover\">\n\t\t<div style=\"display: contents; height: 100%\">" + body + "</div>\n\t</body>\n</html>\n",
+		error: ({ status, message }) => "<!doctype html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\" />\n\t\t<title>" + message + "</title>\n\n\t\t<style>\n\t\t\tbody {\n\t\t\t\t--bg: white;\n\t\t\t\t--fg: #222;\n\t\t\t\t--divider: #ccc;\n\t\t\t\tbackground: var(--bg);\n\t\t\t\tcolor: var(--fg);\n\t\t\t\tfont-family:\n\t\t\t\t\tsystem-ui,\n\t\t\t\t\t-apple-system,\n\t\t\t\t\tBlinkMacSystemFont,\n\t\t\t\t\t'Segoe UI',\n\t\t\t\t\tRoboto,\n\t\t\t\t\tOxygen,\n\t\t\t\t\tUbuntu,\n\t\t\t\t\tCantarell,\n\t\t\t\t\t'Open Sans',\n\t\t\t\t\t'Helvetica Neue',\n\t\t\t\t\tsans-serif;\n\t\t\t\tdisplay: flex;\n\t\t\t\talign-items: center;\n\t\t\t\tjustify-content: center;\n\t\t\t\theight: 100vh;\n\t\t\t\tmargin: 0;\n\t\t\t}\n\n\t\t\t.error {\n\t\t\t\tdisplay: flex;\n\t\t\t\talign-items: center;\n\t\t\t\tmax-width: 32rem;\n\t\t\t\tmargin: 0 1rem;\n\t\t\t}\n\n\t\t\t.status {\n\t\t\t\tfont-weight: 200;\n\t\t\t\tfont-size: 3rem;\n\t\t\t\tline-height: 1;\n\t\t\t\tposition: relative;\n\t\t\t\ttop: -0.05rem;\n\t\t\t}\n\n\t\t\t.message {\n\t\t\t\tborder-left: 1px solid var(--divider);\n\t\t\t\tpadding: 0 0 0 1rem;\n\t\t\t\tmargin: 0 0 0 1rem;\n\t\t\t\tmin-height: 2.5rem;\n\t\t\t\tdisplay: flex;\n\t\t\t\talign-items: center;\n\t\t\t}\n\n\t\t\t.message h1 {\n\t\t\t\tfont-weight: 400;\n\t\t\t\tfont-size: 1em;\n\t\t\t\tmargin: 0;\n\t\t\t}\n\n\t\t\t@media (prefers-color-scheme: dark) {\n\t\t\t\tbody {\n\t\t\t\t\t--bg: #222;\n\t\t\t\t\t--fg: #ddd;\n\t\t\t\t\t--divider: #666;\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div class=\"error\">\n\t\t\t<span class=\"status\">" + status + "</span>\n\t\t\t<div class=\"message\">\n\t\t\t\t<h1>" + message + "</h1>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n"
+	},
+	version_hash: "18wvxzr"
+};
+
+export async function get_hooks() {
+	return {
+		
+		
+	};
+}
+
+export { set_assets, set_building, set_manifest, set_prerendering, set_private_env, set_public_env, set_read_implementation, set_safe_public_env };
+</file>
+
+<file path=".svelte-kit/non-ambient.d.ts" lines="25" modified="2024-11-14 17:42:50">
+// this file is generated — do not edit it
+
+
+declare module "svelte/elements" {
+	export interface HTMLAttributes<T> {
+		'data-sveltekit-keepfocus'?: true | '' | 'off' | undefined | null;
+		'data-sveltekit-noscroll'?: true | '' | 'off' | undefined | null;
+		'data-sveltekit-preload-code'?:
+			| true
+			| ''
+			| 'eager'
+			| 'viewport'
+			| 'hover'
+			| 'tap'
+			| 'off'
+			| undefined
+			| null;
+		'data-sveltekit-preload-data'?: true | '' | 'hover' | 'tap' | 'off' | undefined | null;
+		'data-sveltekit-reload'?: true | '' | 'off' | undefined | null;
+		'data-sveltekit-replacestate'?: true | '' | 'off' | undefined | null;
+	}
+}
+
+export {};
+</file>
+
+<file path=".svelte-kit/tsconfig.json" lines="46" modified="2024-11-14 17:42:50">
+{
+	"compilerOptions": {
+		"paths": {
+			"$lib": [
+				"../src/lib"
+			],
+			"$lib/*": [
+				"../src/lib/*"
+			]
+		},
+		"rootDirs": [
+			"..",
+			"./types"
+		],
+		"verbatimModuleSyntax": true,
+		"isolatedModules": true,
+		"lib": [
+			"esnext",
+			"DOM",
+			"DOM.Iterable"
+		],
+		"moduleResolution": "bundler",
+		"module": "esnext",
+		"noEmit": true,
+		"target": "esnext"
+	},
+	"include": [
+		"ambient.d.ts",
+		"non-ambient.d.ts",
+		"./types/**/$types.d.ts",
+		"../vite.config.js",
+		"../vite.config.ts",
+		"../src/**/*.js",
+		"../src/**/*.ts",
+		"../src/**/*.svelte",
+		"../tests/**/*.js",
+		"../tests/**/*.ts",
+		"../tests/**/*.svelte"
+	],
+	"exclude": [
+		"../node_modules/**",
+		"../src/service-worker.js",
+		"../src/service-worker.ts",
+		"../src/service-worker.d.ts"
+	]
+}
+</file>
+
+<file path=".svelte-kit/types/route_meta_data.json" lines="3" modified="2024-11-14 17:42:50">
+{
+	"/": []
+}
+</file>
+
+<file path=".svelte-kit/types/src/routes/$types.d.ts" lines="22" modified="2024-11-14 17:42:50">
+import type * as Kit from '@sveltejs/kit';
+
+type Expand<T> = T extends infer O ? { [K in keyof O]: O[K] } : never;
+// @ts-ignore
+type MatcherParam<M> = M extends (param : string) => param is infer U ? U extends string ? U : string : string;
+type RouteParams = {  };
+type RouteId = '/';
+type MaybeWithVoid<T> = {} extends T ? T | void : T;
+export type RequiredKeys<T> = { [K in keyof T]-?: {} extends { [P in K]: T[K] } ? never : K; }[keyof T];
+type OutputDataShape<T> = MaybeWithVoid<Omit<App.PageData, RequiredKeys<T>> & Partial<Pick<App.PageData, keyof T & keyof App.PageData>> & Record<string, any>>
+type EnsureDefined<T> = T extends null | undefined ? {} : T;
+type OptionalUnion<U extends Record<string, any>, A extends keyof U = U extends U ? keyof U : never> = U extends unknown ? { [P in Exclude<A, keyof U>]?: never } & U : never;
+export type Snapshot<T = any> = Kit.Snapshot<T>;
+type PageParentData = EnsureDefined<LayoutData>;
+type LayoutRouteId = RouteId | "/" | null
+type LayoutParams = RouteParams & {  }
+type LayoutParentData = EnsureDefined<{}>;
+
+export type PageServerData = null;
+export type PageData = Expand<PageParentData>;
+export type LayoutServerData = null;
+export type LayoutData = Expand<LayoutParentData>;
+</file>
+
+<file path="README.md" lines="38" modified="2024-04-03 12:18:51">
+# create-svelte
+
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+
+## Creating a project
+
+If you're seeing this, you've probably already done this step. Congrats!
+
+```bash
+# create a new project in the current directory
+npm create svelte@latest
+
+# create a new project in my-app
+npm create svelte@latest my-app
+```
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+</file>
+
+<file path="build/manifest.json" lines="25" modified="2023-08-31 08:59:09">
+{
+  "short_name": "Start Page",
+  "name": "Start page: mio-startpage",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
+</file>
+
+<file path="package.json" lines="39" modified="2024-11-14 17:42:28">
+{
+  "name": "mio-startpage",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "pages:preview": "pnpm run build && wrangler pages dev --compatibility-date=2024-02-08 .svelte-kit/cloudflare",
+    "pages:deploy": "pnpm run build && wrangler pages deploy .svelte-kit/cloudflare"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240222.0",
+    "@sveltejs/adapter-auto": "^3.1.1",
+    "@sveltejs/adapter-cloudflare": "^4.1.0",
+    "@sveltejs/kit": "^2.5.2",
+    "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.49",
+    "sass": "^1.80.7",
+    "svelte": "^5.2.0",
+    "svelte-check": "^4.0.7",
+    "tailwindcss": "^3.4.15",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.4",
+    "wrangler": "^3.30.0"
+  },
+  "type": "module",
+  "packageManager": "pnpm@9.12.3",
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "clsx": "^2.1.1",
+    "svelte-motion": "^0.12.2",
+    "tailwind-merge": "^2.3.0"
+  }
+}
+</file>
+
+<file path="postcss.config.js" lines="6" modified="2024-04-03 12:18:51">
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+</file>
+
+<file path="renovate.json" lines="6" modified="2023-08-20 21:19:08">
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ]
+}
+</file>
+
+<file path="src/app.d.ts" lines="17" modified="2024-04-03 12:18:51">
+// See https://kit.svelte.dev/docs/types#app
+// for information about these interfaces
+declare global {
+	namespace App {
+        interface Platform {
+          env: {
+            COUNTER: DurableObjectNamespace;
+          };
+          context: {
+            waitUntil(promise: Promise<any>): void;
+          };
+          caches: CacheStorage & { default: Cache }
+        }
+    }
+}
+
+export {};
+</file>
+
+<file path="src/lib/index.ts" lines="1" modified="2024-04-03 12:18:51">
+// place files you want to import through the `$lib` alias in this folder.
+</file>
+
+<file path="src/lib/utils/cn.ts" lines="6" modified="2024-05-28 18:39:29">
+import { type ClassValue, clsx } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+        
+export function cn(...inputs: ClassValue[]) {
+    return twMerge(clsx(inputs));
+}
+</file>
+
+<file path="static/manifest.json" lines="25" modified="2024-04-03 12:18:51">
+{
+  "short_name": "Start Page",
+  "name": "Start page: mio-startpage",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
+</file>
+
+<file path="svelte.config.js" lines="18" modified="2024-04-03 12:18:51">
+import adapter from "@sveltejs/adapter-cloudflare";
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
+	// for more information about preprocessors
+	preprocess: vitePreprocess(),
+
+	kit: {
+		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
+		// If your environment is not supported or you settled on a specific environment, switch out the adapter.
+		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
+		adapter: adapter()
+	}
+};
+
+export default config;
+</file>
+
+<file path="tailwind.config.js" lines="25" modified="2024-05-28 18:40:34">
+/** @type {import('tailwindcss').Config} */
+import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette';
+import aspectRatio from '@tailwindcss/aspect-ratio';
+
+export default {
+  content: ['./src/**/*.{html,js,svelte,ts}'],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+        aspectRatio,
+		addVariablesForColors
+  ],
+}
+
+function addVariablesForColors({ addBase, theme }) {
+	let allColors = flattenColorPalette(theme('colors'));
+	let newVars = Object.fromEntries(
+		Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+	);
+
+	addBase({
+		':root': newVars
+	});
+}
+</file>
+
+<file path="tsconfig.json" lines="18" modified="2024-04-03 12:18:51">
+{
+	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"moduleResolution": "bundler"
+	}
+	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
+	//
+	// If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
+	// from the referenced tsconfig.json - TypeScript does not merge them in
+}
+</file>
+
+<file path="vite.config.ts" lines="6" modified="2024-04-03 12:18:51">
+import { sveltekit } from '@sveltejs/kit/vite';
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+	plugins: [sveltekit()]
+});
+</file>
+
