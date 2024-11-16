@@ -24,7 +24,7 @@ A modern, customizable browser startpage built with SvelteKit 2, Svelte 5, and T
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/mio-startpage.git
+git clone https://github.com/pabl-o-ce/mio-startpage.git
 cd mio-startpage
 
 # Install dependencies
