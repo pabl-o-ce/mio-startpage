@@ -196,9 +196,9 @@ const bookmarks = [
     icon: "sendingblue.svg",
   },
   {
-    title: "Namecheap",
-    url: "https://ap.www.namecheap.com/dashboard",
-    icon: "namecheap.svg",
+    title: "NixOS",
+    url: "https://wiki.nixos.org/wiki/NixOS_Wiki",
+    icon: "nixos.svg",
   },
   {
     title: "Arch Linux",
