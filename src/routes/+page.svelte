@@ -27,9 +27,9 @@
     <div class="absolute inset-0">
       <div class="absolute inset-0 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#6633ee36_100%)]"></div>
     </div>
-    <img class="absolute top-0 left-0 animate-pulse rotate" src={"/img/stars.svg"} alt="" width="50%"/>
-    <img class="absolute right-0 bottom-0 animate-pulse rotate" src={"/img/stars.svg"} alt="" width="50%"/>
-    <img class="absolute left-0 bottom-0 animate-pulse rotate0" src={"/img/stars.svg"} alt="" width="50%"/>
-    <img class="absolute top-0 right-0 animate-pulse rotate" src={"/img/stars.svg"} alt="" width="50%"/>
+    <img class="absolute top-0 left-0" src={"/img/stars.svg"} alt="" width="50%"/>
+    <img class="absolute right-0 bottom-0" src={"/img/stars.svg"} alt="" width="50%"/>
+    <img class="absolute left-0 bottom-0" src={"/img/stars.svg"} alt="" width="50%"/>
+    <img class="absolute top-0 right-0" src={"/img/stars.svg"} alt="" width="50%"/>
 </main>
 <BackgroundBeams />
