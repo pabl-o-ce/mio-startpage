@@ -9,10 +9,7 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "pages:preview": "pnpm run build && wrangler pages dev --compatibility-date=2024-02-08 .svelte-kit/cloudflare",
-    "pages:deploy": "pnpm run build && wrangler pages deploy .svelte-kit/cloudflare",
-    "test": "vitest",
-    "test:ui": "vitest --ui",
-    "coverage": "vitest run --coverage"
+    "pages:deploy": "pnpm run build && wrangler pages deploy .svelte-kit/cloudflare"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240222.0",
@@ -29,12 +26,7 @@
     "tslib": "^2.6.2",
     "typescript": "^5.3.3",
     "vite": "^5.1.4",
-    "wrangler": "^4.0.0",
-    "vitest": "^1.2.2",
-    "@vitest/ui": "^1.2.2",
-    "jsdom": "^24.0.0",
-    "vite-tsconfig-paths": "^4.3.1",
-    "@vitest/coverage-v8": "^1.2.2"
+    "wrangler": "^4.0.0"
   },
   "type": "module",
   "packageManager": "pnpm@9.15.9",

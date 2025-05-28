@@ -1,130 +1,253 @@
 <script lang="ts">
-  import { bookmarks, addBookmark, editBookmark, deleteBookmark, type Bookmark } from '../lib/stores/bookmarkStore';
-  // No need to import writable or onMount for this part as $bookmarks auto-subscription and store logic suffice
+const bookmarks = [
+  {
+    title: "Email",
+    url: "https://mail.poscye.com/SOGo",
+    icon: "email.svg",
+  },
+  {
+    title: "ProtonMail",
+    url: "https://mail.protonmail.com",
+    icon: "protonmail.svg",
+  },
+  {
+    title: "Reddit",
+    url: "https://reddit.com",
+    icon: "reddit.svg",
+  },
+  {
+    title: "YouTube",
+    url: "https://youtube.com",
+    icon: "youtube.svg",
+  },
+  {
+    title: "Spotify",
+    url: "https://open.spotify.com/",
+    icon: "spotify.svg",
+  },
+  {
+    title: "TuneIn",
+    url: "https://tunein.com/radio/home/",
+    icon: "tunein.svg",
+  },
+  {
+    title: "Hacker News",
+    url: "https://news.ycombinator.com/",
+    icon: "hackernews.svg",
+  },
+  {
+    title: "GitHub",
+    url: "https://www.github.com/",
+    icon: "github.svg",
+  },
+  {
+    title: "Chat",
+    url: "https://chat.openai.com/chat",
+    icon: "tg.svg",
+  },
+  {
+    title: "Claude",
+    url: "https://claude.ai/chat",
+    icon: "tg.svg",
+  },
+  {
+    title: "GoogleGeminiChat",
+    url: "https://gemini.google.com",
+    icon: "tg.svg",
+  },
+  {
+    title: "MistralChat",
+    url: "https://chat.mistral.ai",
+    icon: "tg.svg",
+  },
+  {
+    title: "HuggingChat",
+    url: "https://huggingface.co/chat/",
+    icon: "tg.svg",
+  },
+  {
+    title: "Perplexity",
+    url: "https://labs.perplexity.ai/",
+    icon: "tg.svg",
+  },
+  {
+    title: "Notion",
+    url: "https://www.notion.so",
+    icon: "notion.svg",
+  },
+  {
+    title: "Excalidraw",
+    url: "https://excalidraw.com",
+    icon: "excalidraw.svg",
+  },
+  {
+    title: "CrowdSec",
+    url: "https://app.crowdsec.net/",
+    icon: "crowdsec.svg",
+  },
+  {
+    title: "InfluxDB",
+    url: "https://cloud2.influxdata.com/signup",
+    icon: "influxdb.svg",
+  },
+  {
+    title: "Grafana",
+    url: "https://poscye.grafana.net/login",
+    icon: "grafana.svg",
+  },
+  {
+    title: "TypeScript",
+    url: "https://www.typescriptlang.org/docs/",
+    icon: "typescript.svg",
+  },
+  {
+    title: "Node.js",
+    url: "https://nodejs.org/en/docs/",
+    icon: "nodejs.svg",
+  },
+  {
+    title: "React",
+    url: "https://reactjs.org/docs/getting-started.html",
+    icon: "react.svg",
+  },
+  {
+    title: "Next.js",
+    url: "https://nextjs.org/docs/getting-started",
+    icon: "nextjs.svg",
+  },
+  {
+    title: "Rust",
+    url: "https://www.rust-lang.org/learn",
+    icon: "rust.svg",
+  },
+  {
+    title: "Apollo GraphQL",
+    url: "https://www.apollographql.com/docs/",
+    icon: "apollo-graphql.svg",
+  },
+  {
+    title: "Jest",
+    url: "https://jestjs.io/docs/getting-started",
+    icon: "jest.svg",
+  },
+  {
+    title: "Lodash",
+    url: "https://lodash.com/",
+    icon: "lodash.svg",
+  },
+  {
+    title: "Webpack",
+    url: "https://webpack.js.org/concepts/",
+    icon: "webpack.svg",
+  },
+  {
+    title: "Tailwind CSS",
+    url: "https://tailwindcss.com/docs",
+    icon: "tailwind.svg",
+  },
+  {
+    title: "Heroicons",
+    url: "https://heroicons.com/",
+    icon: "heroicons.svg",
+  },
+  {
+    title: "Primer CSS",
+    url: "https://primer.style/css/",
+    icon: "primer.svg",
+  },
+  {
+    title: "Docker",
+    url: "https://docs.docker.com/",
+    icon: "docker.svg",
+  },
+  {
+    title: "Kubernetes",
+    url: "https://kubernetes.io/docs/home/",
+    icon: "kubernets.svg",
+  },
+  {
+    title: "Hetzner",
+    url: "https://console.hetzner.cloud",
+    icon: "hetzner.svg",
+  },
+  {
+    title: "Vultr",
+    url: "https://my.vultr.com/",
+    icon: "vultr.svg",
+  },
+  {
+    title: "Vercel",
+    url: "https://vercel.com/",
+    icon: "vercel.svg",
+  },
+  {
+    title: "AWS",
+    url: "https://poscye.signin.aws.amazon.com/console",
+    icon: "aws.svg",
+  },
+  {
+    title: "Cloudflare",
+    url: "https://dash.cloudflare.com/",
+    icon: "cloudflare.svg",
+  },
+  {
+    title: "Sendinblue",
+    url: "https://my.sendinblue.com/",
+    icon: "sendingblue.svg",
+  },
+  {
+    title: "NixOS",
+    url: "https://wiki.nixos.org/wiki/NixOS_Wiki",
+    icon: "nixos.svg",
+  },
+  {
+    title: "Arch Linux",
+    url: "https://wiki.archlinux.org/",
+    icon: "archlinux.svg",
+  },
+  {
+    title: "Telegram",
+    url: "https://web.telegram.org/k/",
+    icon: "telegram.svg",
+  },
+  {
+    title: "WhatsApp",
+    url: "https://web.whatsapp.com/",
+    icon: "whatsapp.svg",
+  },
+  {
+    title: "Discord",
+    url: "https://discord.com/app",
+    icon: "discord.svg",
+  },
+  {
+    title: "Newegg",
+    url: "https://newegg.com/",
+    icon: "newegg.svg",
+  },
+  {
+    title: "eBay",
+    url: "https://ebay.com/",
+    icon: "ebay.svg",
+  },
+  {
+    title: "Library Genesis",
+    url: "https://libgen.fun/",
+    icon: "libgen.svg",
+  },
+  {
+    title: "1337x",
+    url: "https://1337x.to",
+    icon: "1337x.svg",
+  },
+];
 
-  // For Add New Bookmark form
-  let newTitle: string = '';
-  let newUrl: string = '';
-
-  // For Edit Bookmark form
-  let editingBookmarkId: string | null = null;
-  let editTitle: string = '';
-  let editUrl: string = '';
-
-  function handleAddBookmark() {
-    if (newTitle.trim() && newUrl.trim()) {
-      addBookmark(newTitle.trim(), newUrl.trim());
-      newTitle = '';
-      newUrl = '';
-    } else {
-      alert('Please provide both title and URL.');
-    }
-  }
-
-  function startEdit(bookmark: Bookmark) {
-    editingBookmarkId = bookmark.id;
-    editTitle = bookmark.title;
-    editUrl = bookmark.url;
-  }
-
-  function handleEditBookmark() {
-    if (editingBookmarkId && editTitle.trim() && editUrl.trim()) {
-      editBookmark(editingBookmarkId, { title: editTitle.trim(), url: editUrl.trim() });
-      cancelEdit();
-    } else {
-      alert('Please provide both title and URL for editing.');
-    }
-  }
-
-  function cancelEdit() {
-    editingBookmarkId = null;
-    editTitle = '';
-    editUrl = '';
-  }
-
-  function handleDeleteBookmark(id: string) {
-    if (confirm('Are you sure you want to delete this bookmark?')) {
-      deleteBookmark(id);
-    }
-  }
-
-  // Helper to get icon path
-  function getIconPath(icon?: string): string {
-    if (!icon) return '/img/default-icon.svg'; // Path to a generic default icon
-    // Simple check if it's a full URL vs. a local file path
-    if (icon.startsWith('http://') || icon.startsWith('https://') || icon.startsWith('data:')) {
-      return icon;
-    }
-    return `/img/${icon}`;
-  }
 </script>
 
-<section class="w-full p-4 md:p-6 bg-gray-900 text-gray-100 min-h-screen">
-  <!-- Add New Bookmark Form -->
-  <div class="mb-8 p-4 md:p-6 bg-gray-800 rounded-lg shadow-xl mx-auto max-w-2xl">
-    <h2 class="text-2xl font-semibold mb-4 text-center text-purple-400">Add New Bookmark</h2>
-    <form on:submit|preventDefault={handleAddBookmark} class="space-y-4">
-      <div>
-        <label for="newTitle" class="block text-sm font-medium text-gray-300 mb-1">Title:</label>
-        <input type="text" id="newTitle" bind:value={newTitle} class="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm text-gray-100" placeholder="e.g., My Favorite Site">
-      </div>
-      <div>
-        <label for="newUrl" class="block text-sm font-medium text-gray-300 mb-1">URL:</label>
-        <input type="url" id="newUrl" bind:value={newUrl} class="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm text-gray-100" placeholder="e.g., https://example.com">
-      </div>
-      <button type="submit" class="w-full px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transition-colors">Add Bookmark</button>
-    </form>
-  </div>
-
-  <!-- Edit Bookmark Form (Modal-like appearance) -->
-  {#if editingBookmarkId}
-    <div class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50">
-      <div class="bg-gray-800 p-6 rounded-lg shadow-xl max-w-md w-full">
-        <h2 class="text-2xl font-semibold mb-4 text-purple-400">Edit Bookmark</h2>
-        <form on:submit|preventDefault={handleEditBookmark} class="space-y-4">
-          <div>
-            <label for="editTitle" class="block text-sm font-medium text-gray-300 mb-1">Title:</label>
-            <input type="text" id="editTitle" bind:value={editTitle} class="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm text-gray-100">
-          </div>
-          <div>
-            <label for="editUrl" class="block text-sm font-medium text-gray-300 mb-1">URL:</label>
-            <input type="url" id="editUrl" bind:value={editUrl} class="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm text-gray-100">
-          </div>
-          <div class="flex justify-end space-x-3">
-            <button type="button" on:click={cancelEdit} class="px-4 py-2 bg-gray-600 text-gray-200 rounded-md hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 transition-colors">Cancel</button>
-            <button type="submit" class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 transition-colors">Save Changes</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  {/if}
-
-  <!-- Bookmarks List -->
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold mb-6 text-center text-purple-300">My Bookmarks</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
-      {#each $bookmarks as bookmark (bookmark.id)}
-        <div class="bg-gray-800 rounded-lg p-4 shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col justify-between">
-          <a href={bookmark.url} target="_blank" rel="noopener noreferrer" class="block mb-3 hover:opacity-80 transition-opacity">
-            <div class="flex items-center">
-              <img class="w-8 h-8 mr-3 object-contain flex-shrink-0" src={getIconPath(bookmark.icon)} alt="{bookmark.title} icon" width="32" height="32"/>
-              <span class="font-semibold text-purple-300 truncate group-hover:text-purple-200" title={bookmark.title}>
-                {bookmark.title}
-              </span>
-            </div>
-          </a>
-          <div class="mt-auto pt-2 border-t border-gray-700">
-            {#if bookmark.isUserDefined !== false}
-              <div class="flex justify-end space-x-2">
-                <button on:click={() => startEdit(bookmark)} class="text-xs px-3 py-1 bg-yellow-500 text-black rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-50 transition-colors">Edit</button>
-                <button on:click={() => handleDeleteBookmark(bookmark.id)} class="text-xs px-3 py-1 bg-red-600 text-white rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 transition-colors">Delete</button>
-              </div>
-            {:else}
-              <span class="text-xs text-gray-500 italic">(Default)</span>
-            {/if}
-          </div>
-        </div>
-      {/each}
-    </div>
-  </div>
+<section class="w-full max-h-60 relative z-50 flex flex-col justify-start flex-wrap items-center">
+    {#each bookmarks as { title, url, icon }, i}
+        <a class="mb-[15px] mr-3.5 btn box-shadow-none" href={url}>
+            <img class="icon-bookmark" src={`/img/${icon}`} width="25" alt={title}/>
+        </a>
+    {/each}
 </section>

@@ -12,7 +12,6 @@ A modern, customizable browser startpage built with SvelteKit 2, Svelte 5, and T
 - 📱 **Mobile Friendly**: Fully responsive design
 - 🛠️ **Modern Tech Stack**: Built with Svelte 5's latest features
 - 🚀 **Cloudflare Pages**: Optimized for deployment on Cloudflare Pages
-- ✨ **Customizable Bookmarks**: Easily add, edit, and delete your own bookmarks. Your bookmarks are saved locally in your browser.
 
 ## 🚀 Quick Start
 
@@ -94,15 +93,6 @@ mio-startpage/
 ### Dark Mode
 
 Dark mode automatically syncs with your system preferences but can be toggled manually. Your preference is saved in local storage.
-
-### Bookmark Management
-
-You can now personalize your startpage by managing your own bookmarks:
-
-*   **Adding Bookmarks:** Use the 'Add New Bookmark' form (usually found at the top of the bookmark section) to enter a title and URL for your new bookmark.
-*   **Editing Bookmarks:** Click the 'Edit' button next to any of your custom (user-added) bookmarks to change its title or URL.
-*   **Deleting Bookmarks:** Click the 'Delete' button next to a custom bookmark to remove it. A confirmation dialog will appear before deletion.
-*   **Storage:** Your custom bookmarks are stored directly in your browser's local storage. This means they are private to you and your browser. Default bookmarks are provided as a starting point and cannot be edited or deleted in the same way as user-added bookmarks.
 
 ## 🤝 Contributing
 
