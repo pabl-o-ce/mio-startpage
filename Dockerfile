@@ -1,5 +1,5 @@
 # Use the official Node.js Slim image as the base
-FROM node:22.14.0-alpine3.21 AS base
+FROM node:22.15.1-alpine3.21 AS base
 
 # Set environment variables for pnpm
 ENV PNPM_HOME="/pnpm"
