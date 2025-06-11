@@ -41,39 +41,34 @@ const bookmarks = [
     icon: "github.svg",
   },
   {
-    title: "Chat",
-    url: "https://chat.openai.com/chat",
-    icon: "tg.svg",
-  },
-  {
     title: "Claude",
     url: "https://claude.ai/chat",
-    icon: "tg.svg",
-  },
-  {
-    title: "GoogleGeminiChat",
-    url: "https://gemini.google.com",
-    icon: "tg.svg",
+    icon: "claude.svg",
   },
   {
     title: "MistralChat",
     url: "https://chat.mistral.ai",
-    icon: "tg.svg",
+    icon: "mistral.svg",
+  },
+  {
+    title: "GoogleAIChat",
+    url: "https://ai.dev",
+    icon: "gemini.svg",
+  },
+  {
+    title: "Cohere",
+    url: "https://coral.cohere.com",
+    icon: "cohere.svg",
   },
   {
     title: "HuggingChat",
     url: "https://huggingface.co/chat/",
-    icon: "tg.svg",
+    icon: "hf.svg",
   },
   {
     title: "Perplexity",
     url: "https://labs.perplexity.ai/",
-    icon: "tg.svg",
-  },
-  {
-    title: "Notion",
-    url: "https://www.notion.so",
-    icon: "notion.svg",
+    icon: "perplexity.svg",
   },
   {
     title: "Excalidraw",
