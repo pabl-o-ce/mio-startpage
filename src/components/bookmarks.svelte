@@ -41,17 +41,22 @@ const bookmarks = [
     icon: "github.svg",
   },
   {
+    title: "Hugging Face",
+    url: "https://www.huggingface.co",
+    icon: "hff.svg",
+  },
+  {
     title: "Claude",
     url: "https://claude.ai/chat",
     icon: "claude.svg",
   },
   {
-    title: "MistralChat",
+    title: "Mistral",
     url: "https://chat.mistral.ai",
     icon: "mistral.svg",
   },
   {
-    title: "GoogleAIChat",
+    title: "Google Studio AI",
     url: "https://ai.dev",
     icon: "gemini.svg",
   },
@@ -61,7 +66,7 @@ const bookmarks = [
     icon: "cohere.svg",
   },
   {
-    title: "HuggingChat",
+    title: "Hugging Chat",
     url: "https://huggingface.co/chat/",
     icon: "hf.svg",
   },
