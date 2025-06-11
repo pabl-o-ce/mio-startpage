@@ -43,7 +43,7 @@ const bookmarks = [
   {
     title: "Hugging Face",
     url: "https://www.huggingface.co",
-    icon: "hff.svg",
+    icon: "hf.svg",
   },
   {
     title: "Claude",
@@ -68,7 +68,7 @@ const bookmarks = [
   {
     title: "Hugging Chat",
     url: "https://huggingface.co/chat/",
-    icon: "hf.svg",
+    icon: "hfc.svg",
   },
   {
     title: "Perplexity",
