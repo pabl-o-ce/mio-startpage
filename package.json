@@ -35,5 +35,8 @@
     "clsx": "^2.1.1",
     "svelte-motion": "^0.12.2",
     "tailwind-merge": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=20.18.1"
   }
 }
