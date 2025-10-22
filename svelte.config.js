@@ -1,5 +1,9 @@
-import adapter from "@sveltejs/adapter-cloudflare";
+import adapterCloudflare from "@sveltejs/adapter-cloudflare";
+import adapterAuto from "@sveltejs/adapter-auto";
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+
+// Use auto adapter for local dev on older macOS, cloudflare for production
+const adapter = process.env.CF_PAGES ? adapterCloudflare : adapterAuto;
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
