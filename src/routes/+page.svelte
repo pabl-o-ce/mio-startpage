@@ -2,7 +2,7 @@
     import Header from './../components/header.svelte';
     import Search from './../components/search.svelte';
     import Bookmarks from './../components/bookmarks.svelte';
-    import "../app.scss"
+    import "../app.css"
     import BackgroundBeams from '../components/ui/BackgroundBeams.svelte';
     import GalaxyBackground from '../components/ui/GalaxyBackground.svelte';
 </script>

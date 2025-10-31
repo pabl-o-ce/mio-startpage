@@ -1,23 +1,31 @@
 /** @type {import('tailwindcss').Config} */
-import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette';
-import aspectRatio from '@tailwindcss/aspect-ratio';
-
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {},
   },
   plugins: [
-        aspectRatio,
-		addVariablesForColors
+    addVariablesForColors
   ],
 }
 
 function addVariablesForColors({ addBase, theme }) {
-	let allColors = flattenColorPalette(theme('colors'));
-	let newVars = Object.fromEntries(
-		Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-	);
+	const colors = theme('colors');
+	const newVars = {};
+
+	// Flatten and generate CSS variables
+	const flattenColors = (obj, prefix = '') => {
+		for (const [key, val] of Object.entries(obj)) {
+			const varName = prefix ? `${prefix}-${key}` : key;
+			if (typeof val === 'string') {
+				newVars[`--${varName}`] = val;
+			} else if (typeof val === 'object') {
+				flattenColors(val, varName);
+			}
+		}
+	};
+
+	flattenColors(colors);
 
 	addBase({
 		':root': newVars
