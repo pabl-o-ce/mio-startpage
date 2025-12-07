@@ -4,7 +4,6 @@
     import Bookmarks from './../components/bookmarks.svelte';
     import "../app.css"
     import BackgroundBeams from '../components/ui/BackgroundBeams.svelte';
-    import GalaxyBackground from '../components/ui/GalaxyBackground.svelte';
 </script>
 <style lang="postcss">
     :global(html) {
@@ -21,7 +20,6 @@
     }
 </style>
 
-<GalaxyBackground />
 <main class="h-full px-[3%] mx-auto relative overflow-hidden z-10">
     <Header/>
     <Search/>
