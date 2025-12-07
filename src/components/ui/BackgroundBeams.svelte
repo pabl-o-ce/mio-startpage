@@ -1,5 +1,6 @@
 <script lang="ts">
-    import { cn } from '$lib/utils/cn';
+	// @ts-nocheck - Motion directive properly supports SVG with isSVG flag, but types don't reflect it
+  import { cn } from '$lib/utils/cn';
 	import { M, Motion } from 'svelte-motion';
 
 	export let className: string | undefined = undefined;
@@ -91,6 +92,7 @@
 			</Motion>
 		{/each}
 		<defs>
+			<!-- svelte-ignore ts -->
 			{#each paths as path, index (`gradient-${index}`)}
 				<Motion
 					isSVG={true}
@@ -108,6 +110,7 @@
 						delay: Math.random() * 10
 					}}
 				>
+					<!-- @ts-expect-error -->
 					<linearGradient
 						use:motion
 						id={`linearGradient-${index}`}

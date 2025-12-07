@@ -15,6 +15,7 @@
 
 <section class="pt-10 pb-6 relative z-50 border-bottom mt-4 md:mt-20">
     <img class="search-icon font-bold absolute top-12 left-4" src={'/img/shuttle.svg'} width="45" alt='icon'/>
+    <!-- svelte-ignore a11y_autofocus -->
     <input class="w-full h-16 font-bold text-4xl indent-16 rounded caret-transparent bg-[#000600] color-[#29fd2e] block focus:outline-none focus-visible:ring-0 focus-visible:ring-[#000600]"
         bind:value={search}
         onkeypress={handleKeyPress}

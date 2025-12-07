@@ -17,7 +17,7 @@
         return () => clearInterval(intervalId);
     });
 </script>
-<nav class="bg-dark px-2 sm:px-4 py-2.5 rounded">
+<nav class="sticky bg-dark px-2 sm:px-4 py-2.5 rounded z-40">
     <div class="container flex flex-nowrap items-center justify-center mx-auto">
         <div class="items-center justify-center my-0 mx-auto flex w-full order-1" id="navbar-cta">
             <ul class="w-auto flex justify-center p-4 mt-4 rounded-lg bg-dark flex-row space-x-8 font-bold md:mt-0 md:text-lg">
