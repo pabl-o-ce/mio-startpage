@@ -28,7 +28,7 @@
     "wrangler": "^4.45.3"
   },
   "type": "module",
-  "packageManager": "pnpm@10.18.1",
+  "packageManager": "pnpm@10.30.3",
   "dependencies": {
     "clsx": "^2.1.1",
     "svelte-motion": "^0.12.2",
