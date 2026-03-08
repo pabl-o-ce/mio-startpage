@@ -1,7 +1,7 @@
 <script lang="ts">
-    import Header from './../components/header.svelte';
     import Search from './../components/search.svelte';
     import Bookmarks from './../components/bookmarks.svelte';
+    import HackerNews from './../components/hackernews.svelte';
     import "../app.css"
     import BackgroundBeams from '../components/ui/BackgroundBeams.svelte';
 </script>
@@ -20,8 +20,8 @@
     }
 </style>
 
-<main class="h-full px-[3%] mx-auto relative overflow-hidden z-10">
-    <Header/>
+<main class="min-h-full px-[3%] mx-auto relative z-10">
+    <HackerNews/>
     <Search/>
     <Bookmarks/>
     <!-- <div class="absolute inset-0">

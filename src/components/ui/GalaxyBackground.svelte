@@ -55,7 +55,7 @@
     for (let i = 0; i < stars; i++) {
       angle[i] = Math.random() * 2 * Math.PI;
       radius[i] = Math.abs(randomGauss()) * maxRadius * 0.6;
-      z[i] = Math.abs(randomGauss() * gauss(radius[i] / maxRadius * 5.0) * maxRadius * 0.04);
+      z[i] = Math.abs(randomGauss() * gauss(radius[i]! / maxRadius * 5.0) * maxRadius * 0.04);
     }
   }
 
@@ -91,8 +91,8 @@
 
     // Draw stars
     for (let i = 0; i < stars; i++) {
-      const r = radius[i];
-      const a = angle[i] + speedMul * (maxRadius / r) * 3;
+      const r = radius[i]!;
+      const a = angle[i]! + speedMul * (maxRadius / r) * 3;
       angle[i] = a;
 
       const x = r * Math.sin(a);
@@ -101,7 +101,7 @@
       const s = Math.sin(b);
       const c = Math.cos(b);
       const xx = cx + s * x + c * y;
-      const yy = cy + (c * x - s * y) / 3 - z[i] * 20 + cy * 0.2;
+      const yy = cy + (c * x - s * y) / 3 - z[i]! * 20 + cy * 0.2;
 
       // Distance from center (normalized)
       const distFromCenter = r / maxRadius;
@@ -138,8 +138,8 @@
       ctx.fillStyle = `rgba(${red}, ${green}, ${blue}, 0.6)`;
 
       // Larger, brighter stars in the bulge
-      if (z[i] > 0.2) {
-        if (z[i] > 9.0) {
+      if (z[i]! > 0.2) {
+        if (z[i]! > 9.0) {
           ctx.beginPath();
           ctx.arc(xx, yy, 4, 0, 2 * Math.PI);
           ctx.fill();
