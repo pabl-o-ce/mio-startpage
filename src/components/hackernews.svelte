@@ -7,7 +7,7 @@
     let sortMode: HNSortMode = $state('points');
     let loading = $state(true);
     let error: string | null = $state(null);
-    let track: HTMLUListElement = $state(undefined as unknown as HTMLUListElement);
+    let track: HTMLUListElement | undefined = $state(undefined);
 
     const sortedStories = $derived.by(() => {
         const sorted = [...stories];

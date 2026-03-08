@@ -2,10 +2,13 @@
   import { onMount } from 'svelte';
   import { cn } from '$lib/utils/cn';
 
-  export let className: string | undefined = undefined;
-  export let stars = 10000;
-  export let maxRadius = 400;
-  export let speed = 0.02;
+  interface Props {
+    className?: string;
+    stars?: number;
+    maxRadius?: number;
+    speed?: number;
+  }
+  let { className, stars = 10000, maxRadius = 400, speed = 0.02 }: Props = $props();
 
   let canvas: HTMLCanvasElement;
   let ctx: CanvasRenderingContext2D;

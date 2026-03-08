@@ -3,22 +3,7 @@
     import Bookmarks from './../components/bookmarks.svelte';
     import HackerNews from './../components/hackernews.svelte';
     import "../app.css"
-    import BackgroundBeams from '../components/ui/BackgroundBeams.svelte';
 </script>
-<style lang="postcss">
-    :global(html) {
-      background-color: theme(colors.black);
-      color: #29FD2E;
-      font-family: 'Exo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-      font-size: 16px;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      position: relative;
-      width: 100%;
-      height: 100%;
-      overflow-x: hidden;
-    }
-</style>
 
 <main class="min-h-full px-[3%] mx-auto relative z-10">
     <HackerNews/>

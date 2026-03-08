@@ -3,7 +3,8 @@
   import { cn } from '$lib/utils/cn';
 	import { M, Motion } from 'svelte-motion';
 
-	export let className: string | undefined = undefined;
+	interface Props { className?: string; }
+	let { className }: Props = $props();
 
 	const paths = [
 		'M-380 -189C-380 -189 -312 216 152 343C616 470 684 875 684 875',
