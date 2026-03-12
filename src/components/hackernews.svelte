@@ -3,9 +3,15 @@
     import { onMount } from 'svelte';
     import HnStoryCard from './hn-story-card.svelte';
 
-    let stories: HNStory[] = $state([]);
+    let { initialStories = [] }: { initialStories?: HNStory[] } = $props();
+
+    // svelte-ignore state_referenced_locally
+    const seedStories = initialStories;
+    const hasSeedData = seedStories.length > 0;
+
+    let stories: HNStory[] = $state(seedStories);
     let sortMode: HNSortMode = $state('points');
-    let loading = $state(true);
+    let loading = $state(!hasSeedData);
     let error: string | null = $state(null);
     let track: HTMLUListElement | undefined = $state(undefined);
 
@@ -38,7 +44,7 @@
     }
 
     onMount(() => {
-        fetchStories();
+        if (!hasSeedData) fetchStories();
         const interval = setInterval(fetchStories, 5 * 60 * 1000);
         return () => clearInterval(interval);
     });
@@ -61,7 +67,7 @@
 <section class="w-full relative z-50 pt-6 pb-4">
     <div class="flex items-center justify-between mb-3">
         <div class="flex items-center gap-2">
-            <img src="/img/hackernews.svg" alt="Hacker News" width="18" class="opacity-60" />
+            <img src="/img/hackernews.svg" alt="Hacker News" width="18" height="18" class="opacity-60" />
         </div>
         <div class="flex items-center gap-2">
             <div class="flex gap-1">

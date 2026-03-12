@@ -247,7 +247,7 @@ const bookmarks = [
 <section class="w-full max-h-60 relative z-50 flex flex-col justify-start flex-wrap items-center">
     {#each bookmarks as { title, url, icon }}
         <a class="mb-[15px] mr-3.5 btn box-shadow-none" href={url}>
-            <img class="icon-bookmark" src={`/img/${icon}`} width="25" alt={title}/>
+            <img class="icon-bookmark" src={`/img/${icon}`} width="25" height="25" alt={title}/>
         </a>
     {/each}
 </section>
