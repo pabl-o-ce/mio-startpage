@@ -26,7 +26,7 @@ importers:
         version: 7.0.1(@sveltejs/kit@2.69.1(@sveltejs/vite-plugin-svelte@7.2.0(svelte@5.55.7(@typescript-eslint/types@8.57.1))(vite@7.3.5(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.93.3)))(svelte@5.55.7(@typescript-eslint/types@8.57.1))(typescript@5.9.3)(vite@7.3.5(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.93.3)))
       '@sveltejs/adapter-cloudflare':
         specifier: ^7.2.8
-        version: 7.2.9(@sveltejs/kit@2.69.1(@sveltejs/vite-plugin-svelte@7.2.0(svelte@5.55.7(@typescript-eslint/types@8.57.1))(vite@7.3.5(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.93.3)))(svelte@5.55.7(@typescript-eslint/types@8.57.1))(typescript@5.9.3)(vite@7.3.5(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.93.3)))(wrangler@4.71.0(@cloudflare/workers-types@4.20260702.1))
+        version: 7.2.10(@sveltejs/kit@2.69.1(@sveltejs/vite-plugin-svelte@7.2.0(svelte@5.55.7(@typescript-eslint/types@8.57.1))(vite@7.3.5(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.93.3)))(svelte@5.55.7(@typescript-eslint/types@8.57.1))(typescript@5.9.3)(vite@7.3.5(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.93.3)))(wrangler@4.71.0(@cloudflare/workers-types@4.20260702.1))
       '@sveltejs/kit':
         specifier: ^2.53.4
         version: 2.69.1(@sveltejs/vite-plugin-svelte@7.2.0(svelte@5.55.7(@typescript-eslint/types@8.57.1))(vite@7.3.5(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.93.3)))(svelte@5.55.7(@typescript-eslint/types@8.57.1))(typescript@5.9.3)(vite@7.3.5(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.93.3))
@@ -856,8 +856,8 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
-  '@sveltejs/adapter-cloudflare@7.2.9':
-    resolution: {integrity: sha512-LEfLRYKZIiNYBPYk9Cu4dFCCIX37NO96jESNRDv7yr3vvblKU4Yh05FPUMRSrOWFKtG6bJcGIvdG/M2DSf4D1w==}
+  '@sveltejs/adapter-cloudflare@7.2.10':
+    resolution: {integrity: sha512-UtWtiuP/UYIInyXGWJrsntYQq76lr/b0QGPCJwvKNMuVqhZ+12TXUMKnJOEiHerf0+qABuDml1uuEiOHZU4OaA==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       wrangler: ^4.0.0
@@ -1102,8 +1102,8 @@ packages:
   hey-listen@1.0.8:
     resolution: {integrity: sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==}
 
-  immutable@5.1.9:
-    resolution: {integrity: sha512-m8nVez3rwrgmWxtLMt1ZYXB2Lv7OKYn/disyxAlSDYAlKSlFoPPfIAmAM/M5xqL4m4C/wAPw7S2/CNaUii1Hxg==}
+  immutable@5.2.1:
+    resolution: {integrity: sha512-CgXNM1BhKqpMjFHTyqQSk09OWqzHNJ/U4BdeBgXoBdR2DdgBdOSv131cO1/YMgzopqnka3B/i949UaMLEKUxOA==}
 
   is-extglob@2.1.1:
     resolution: {integrity: sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==}
@@ -1289,6 +1289,10 @@ packages:
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
+
+  source-map-js@1.2.4:
+    resolution: {integrity: sha512-J7ZjMvHd9O1fcT/5V09QWaaSl2BbWx3F6O08spde82Namf9UB0GxRVIPiNbVsdKkoizHiSpTodo3vp2bAy91MA==}
+    engines: {node: '>=6.0.0'}
 
   style-value-types@5.1.2:
     resolution: {integrity: sha512-Vs9fNreYF9j6W2VvuDTP7kepALi7sk0xtk2Tu8Yxi9UoajJdEVpNpCov0HsLTqXvNGKX+Uv09pkozVITi1jf3Q==}
@@ -1916,7 +1920,7 @@ snapshots:
     dependencies:
       '@sveltejs/kit': 2.69.1(@sveltejs/vite-plugin-svelte@7.2.0(svelte@5.55.7(@typescript-eslint/types@8.57.1))(vite@7.3.5(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.93.3)))(svelte@5.55.7(@typescript-eslint/types@8.57.1))(typescript@5.9.3)(vite@7.3.5(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.93.3))
 
-  '@sveltejs/adapter-cloudflare@7.2.9(@sveltejs/kit@2.69.1(@sveltejs/vite-plugin-svelte@7.2.0(svelte@5.55.7(@typescript-eslint/types@8.57.1))(vite@7.3.5(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.93.3)))(svelte@5.55.7(@typescript-eslint/types@8.57.1))(typescript@5.9.3)(vite@7.3.5(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.93.3)))(wrangler@4.71.0(@cloudflare/workers-types@4.20260702.1))':
+  '@sveltejs/adapter-cloudflare@7.2.10(@sveltejs/kit@2.69.1(@sveltejs/vite-plugin-svelte@7.2.0(svelte@5.55.7(@typescript-eslint/types@8.57.1))(vite@7.3.5(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.93.3)))(svelte@5.55.7(@typescript-eslint/types@8.57.1))(typescript@5.9.3)(vite@7.3.5(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.93.3)))(wrangler@4.71.0(@cloudflare/workers-types@4.20260702.1))':
     dependencies:
       '@cloudflare/workers-types': 4.20260702.1
       '@sveltejs/kit': 2.69.1(@sveltejs/vite-plugin-svelte@7.2.0(svelte@5.55.7(@typescript-eslint/types@8.57.1))(vite@7.3.5(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.93.3)))(svelte@5.55.7(@typescript-eslint/types@8.57.1))(typescript@5.9.3)(vite@7.3.5(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.93.3))
@@ -2155,7 +2159,7 @@ snapshots:
 
   hey-listen@1.0.8: {}
 
-  immutable@5.1.9:
+  immutable@5.2.1:
     optional: true
 
   is-extglob@2.1.1:
@@ -2315,8 +2319,8 @@ snapshots:
   sass@1.93.3:
     dependencies:
       chokidar: 4.0.3
-      immutable: 5.1.9
-      source-map-js: 1.2.1
+      immutable: 5.2.1
+      source-map-js: 1.2.4
     optionalDependencies:
       '@parcel/watcher': 2.6.0
     optional: true
@@ -2363,6 +2367,9 @@ snapshots:
       totalist: 3.0.1
 
   source-map-js@1.2.1: {}
+
+  source-map-js@1.2.4:
+    optional: true
 
   style-value-types@5.1.2:
     dependencies:
